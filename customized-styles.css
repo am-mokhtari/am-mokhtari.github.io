@@ -20,6 +20,11 @@
     color: #087c00 !important;
 }
 
+.text-silver {
+    --bs-text-opacity: 1;
+    color: #C0C0C0 !important;
+}
+
 .border-dark-green {
     --bs-border-opacity: 1;
     border-color: #066600 !important;
