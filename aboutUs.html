@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,140 +6,31 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!--  Libraries  -->
+    <!--  Libraries complete -->
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/tailwind.js"></script>
-    <script src="./js/jquery.waypoints.min.js"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         ownBlue: '#37a5dd',
-                    }
+                    },
+                    lineClamp: {
+                        7: '7',
+                        8: '8',
+                        9: '9',
+                        10: '10',
+                    },
                 }
             }
         }
     </script>
 
-    <!--  Styles  -->
-    <link rel="stylesheet" href="./css/homePageStyles.css">
-    <title>Title</title>
+    <title>about us</title>
 </head>
 
 <body>
-<div id="intro"
-     class="z-50 w-screen h-screen fixed top-0 bg-ownBlue bg-opacity-95 z-50 flex justify-center items-center">
-    <div class="w-1/2 md:w-1/3 h-fit">
-        <svg id="intro-logo" class="w-full h-fit hidden" viewBox="0 0 1043.000000 237.000000"
-             preserveAspectRatio="xMidYMid meet">
-
-            <g transform="translate(0.000000,237.000000) scale(0.100000,-0.100000)"
-               fill="#ffffff" stroke="none">
-                <path d="M685 2345 c-162 -38 -297 -114 -420 -239 -156 -159 -232 -321 -255
--552 -49 -481 226 -893 671 -1003 96 -24 292 -30 386 -12 281 54 511 239 615
-493 30 74 68 229 68 281 l0 27 -287 -2 -286 -3 -26 -63 c-50 -121 -132 -177
--261 -175 -90 1 -150 24 -205 79 -102 102 -129 301 -61 449 32 71 69 110 131
-140 164 81 348 11 402 -151 l20 -59 284 0 284 0 3 29 c7 56 -38 218 -88 321
--102 211 -265 351 -495 425 -60 20 -96 23 -245 26 -124 2 -192 -1 -235 -11z"/>
-                <path d="M2510 2345 c-373 -79 -648 -403 -679 -797 -13 -163 9 -341 55 -456
-125 -307 343 -483 687 -557 16 -3 90 -6 166 -6 112 1 154 5 233 25 315 80 546
-309 635 632 25 90 28 114 27 264 0 198 -18 280 -95 435 -59 119 -125 205 -217
-281 -74 61 -234 145 -327 171 -82 22 -393 28 -485 8z m316 -560 c74 -22 141
--79 183 -155 35 -64 36 -67 36 -180 0 -106 -2 -120 -28 -172 -34 -70 -110
--140 -174 -162 -26 -9 -79 -16 -118 -16 -127 0 -229 70 -287 196 -19 41 -23
-66 -23 154 0 94 3 111 27 161 74 150 230 220 384 174z"/>
-                <path d="M3790 1445 l0 -875 563 2 562 3 3 263 2 262 -275 0 -275 0 -2 608 -3
-607 -287 3 -288 2 0 -875z"/>
-                <path d="M4760 2315 c0 -3 27 -105 61 -228 33 -122 69 -256 80 -297 11 -41 35
--132 54 -202 20 -71 51 -188 71 -260 20 -73 42 -153 49 -178 7 -25 22 -83 35
--130 12 -47 28 -105 35 -130 7 -25 20 -72 28 -105 9 -33 26 -95 38 -138 l22
--77 296 2 295 3 7 30 c3 17 18 84 33 150 15 66 42 190 61 275 66 303 85 385
-94 415 l8 30 7 -25 c3 -14 38 -169 76 -345 76 -344 97 -439 112 -497 l9 -38
-294 0 294 0 12 43 c6 23 67 249 136 502 68 253 135 503 149 555 14 52 31 115
-38 140 8 25 21 74 31 110 9 36 25 94 35 130 49 177 70 256 70 263 0 4 -133 7
--295 7 l-294 0 -10 -37 c-5 -21 -14 -63 -20 -93 -6 -30 -26 -131 -46 -225 -19
--93 -58 -286 -87 -427 -28 -141 -55 -255 -59 -253 -3 3 -10 33 -13 67 -6 47
--142 757 -182 946 l-4 22 -254 0 -253 0 -86 -437 c-48 -241 -92 -472 -98 -513
--13 -92 -24 -106 -32 -42 -3 27 -28 157 -56 288 -28 132 -66 318 -86 414 -20
-96 -42 200 -49 230 l-13 55 -297 3 c-163 1 -296 0 -296 -3z"/>
-                <path d="M7400 1445 l0 -875 615 0 615 0 0 239 c0 213 -2 240 -17 245 -9 4
--154 6 -322 6 l-306 -1 0 93 0 93 263 3 262 2 0 205 0 205 -265 0 -265 0 0 90
-0 90 320 0 320 0 0 240 0 240 -610 0 -610 0 0 -875z"/>
-                <path d="M8690 2314 c0 -4 43 -90 96 -193 160 -309 244 -470 304 -586 32 -60
-85 -165 119 -232 l62 -121 -1 -304 -1 -303 286 0 287 0 -2 308 -1 307 87 168
-c48 92 106 203 129 247 23 44 86 166 140 270 54 105 129 247 166 318 l67 127
--318 0 c-293 0 -318 -1 -325 -17 -4 -10 -33 -88 -65 -173 -33 -85 -80 -209
--105 -275 -25 -66 -48 -127 -51 -135 -8 -22 -13 -10 -88 191 -36 96 -85 226
--109 289 l-44 115 -317 3 c-174 1 -316 -1 -316 -4z"/>
-                <path d="M342 298 c-15 -19 47 -257 71 -272 31 -20 50 5 76 103 13 50 26 89
-28 87 3 -2 17 -46 31 -98 26 -91 28 -93 57 -93 30 0 30 0 63 128 19 70 31 134
-28 142 -3 8 -14 15 -25 15 -21 0 -29 -18 -55 -135 l-13 -60 -17 60 c-34 122
--39 130 -71 130 -29 0 -30 -2 -56 -95 -28 -101 -28 -100 -50 5 -7 33 -16 68
--21 78 -10 20 -31 22 -46 5z"/>
-                <path d="M1073 298 c-21 -25 -105 -248 -99 -263 11 -29 44 -17 57 20 13 34 14
-35 69 35 54 0 57 -1 73 -35 17 -37 53 -48 63 -21 3 8 -19 72 -48 143 -47 113
--56 128 -79 131 -14 2 -31 -3 -36 -10z m63 -165 c-2 -3 -20 -3 -39 -1 l-35 3
-21 55 20 55 19 -54 c10 -30 16 -56 14 -58z"/>
-                <path d="M3816 295 c-9 -25 -7 -248 3 -263 5 -8 17 -12 27 -10 18 3 19 14 19
-143 0 135 -1 140 -21 143 -13 2 -24 -4 -28 -13z"/>
-                <path d="M4195 298 c-3 -8 -4 -72 -3 -144 l3 -129 94 -3 c95 -3 116 4 104 35
--4 9 -26 13 -74 13 l-68 0 -3 118 c-3 113 -4 117 -26 120 -12 2 -24 -3 -27
--10z"/>
-                <path d="M6363 298 c-21 -25 -105 -248 -99 -263 11 -29 44 -17 57 20 13 34 14
-35 69 35 54 0 57 -1 73 -35 17 -37 53 -48 63 -21 3 8 -19 72 -48 143 -47 113
--56 128 -79 131 -14 2 -31 -3 -36 -10z m63 -165 c-2 -3 -20 -3 -39 -1 l-35 3
-21 55 20 55 19 -54 c10 -30 16 -56 14 -58z"/>
-                <path d="M7336 295 c-9 -25 -7 -248 3 -263 5 -8 17 -12 27 -10 18 3 19 14 19
-143 0 135 -1 140 -21 143 -13 2 -24 -4 -28 -13z"/>
-                <path d="M7785 300 c-11 -4 -31 -20 -45 -35 -22 -23 -25 -36 -25 -101 0 -70 2
--75 32 -106 27 -27 41 -32 90 -35 70 -5 117 19 139 72 30 73 9 160 -48 195
--34 21 -105 26 -143 10z m108 -50 c47 -38 45 -136 -5 -173 -55 -41 -118 5
--118 88 0 87 64 131 123 85z"/>
-                <path d="M8311 296 c-8 -9 -11 -56 -9 -142 3 -125 4 -129 25 -132 27 -4 32 12
-35 112 l3 68 60 -88 c49 -72 65 -89 85 -89 l25 0 0 140 c0 133 -1 140 -20 140
--18 0 -20 -8 -25 -94 l-5 -95 -64 97 c-64 97 -85 113 -110 83z"/>
-                <path d="M9093 290 c-42 -25 -63 -68 -63 -125 0 -95 48 -145 138 -145 39 0 57
-6 81 25 36 31 47 61 31 80 -19 22 -29 18 -51 -20 -65 -109 -176 -3 -125 119
-24 58 95 59 126 2 15 -30 32 -33 50 -11 11 13 10 21 -7 43 -40 54 -120 69
--180 32z"/>
-                <path d="M9665 300 c-11 -4 -31 -20 -45 -35 -22 -23 -25 -36 -25 -101 0 -70 2
--75 32 -106 27 -27 41 -32 90 -35 70 -5 117 19 139 72 30 73 9 160 -48 195
--34 21 -105 26 -143 10z m108 -50 c47 -38 45 -136 -5 -173 -55 -41 -118 5
--118 88 0 87 64 131 123 85z"/>
-                <path d="M1514 286 c-10 -25 5 -36 46 -36 l39 0 3 -106 c2 -87 6 -109 20 -117
-12 -8 21 -7 32 2 13 11 16 35 16 117 l0 103 43 3 c34 2 42 7 42 23 0 19 -8 20
--118 23 -96 2 -118 0 -123 -12z"/>
-                <path d="M2054 287 c-2 -7 -3 -69 -2 -138 l3 -124 108 -3 c102 -3 107 -2 107
-18 0 18 -6 20 -80 20 l-80 0 0 45 0 44 73 3 c56 2 72 6 72 18 0 12 -16 16 -72
-18 l-73 3 0 34 0 34 78 3 c60 2 77 6 77 18 0 21 -203 28 -211 7z"/>
-                <path d="M2584 287 c-2 -7 -3 -69 -2 -138 l3 -124 25 0 c23 0 25 4 28 57 2 44
-7 58 18 58 29 0 52 -20 83 -70 31 -50 65 -66 77 -36 7 18 -17 65 -45 90 l-21
-19 29 18 c36 22 46 60 27 98 -20 37 -32 41 -132 41 -60 0 -86 -4 -90 -13z
-m154 -39 c33 -33 1 -68 -62 -68 -35 0 -36 1 -36 40 l0 40 43 0 c24 0 48 -5 55
--12z"/>
-                <path d="M3305 287 c-3 -7 -4 -69 -3 -138 l3 -124 25 0 c24 0 25 3 28 62 l3
-62 57 3 c43 2 57 7 57 18 0 11 -14 16 -57 18 l-58 3 0 34 0 34 68 3 c52 2 67
-6 67 18 0 21 -183 28 -190 7z"/>
-                <path d="M4664 286 c-10 -25 5 -36 46 -36 l39 0 3 -106 c2 -87 6 -109 20 -117
-12 -8 21 -7 32 2 13 11 16 35 16 117 l0 103 43 3 c34 2 42 7 42 23 0 19 -8 20
--118 23 -96 2 -118 0 -123 -12z"/>
-                <path d="M5204 287 c-2 -7 -3 -69 -2 -138 l3 -124 108 -3 c102 -3 107 -2 107
-18 0 18 -6 20 -80 20 l-80 0 0 45 0 44 73 3 c56 2 72 6 72 18 0 12 -16 16 -72
-18 l-73 3 0 34 0 34 78 3 c60 2 77 6 77 18 0 21 -203 28 -211 7z"/>
-                <path d="M5734 287 c-2 -7 -3 -69 -2 -138 l3 -124 25 0 c23 0 25 4 28 57 2 44
-7 58 18 58 29 0 52 -20 83 -70 31 -50 65 -66 77 -36 7 18 -17 65 -45 90 l-21
-19 29 18 c36 22 46 60 27 98 -20 37 -32 41 -132 41 -60 0 -86 -4 -90 -13z
-m154 -39 c33 -33 1 -68 -62 -68 -35 0 -36 1 -36 40 l0 40 43 0 c24 0 48 -5 55
--12z"/>
-                <path d="M6794 286 c-10 -25 5 -36 46 -36 l39 0 3 -106 c2 -87 6 -109 20 -117
-12 -8 21 -7 32 2 13 11 16 35 16 117 l0 103 43 3 c34 2 42 7 42 23 0 19 -8 20
--118 23 -96 2 -118 0 -123 -12z"/>
-                <path d="M9975 60 c-8 -26 6 -43 31 -38 13 2 19 12 19 28 0 34 -40 41 -50 10z"/>
-            </g>
-        </svg>
-    </div>
-</div>
 
 <header>
     <div id="toolbar" class="w-full fixed top-0 border-b-2 bg-white/65 backdrop-blur-md z-40">
@@ -599,7 +490,8 @@ m154 -39 c33 -33 1 -68 -62 -68 -35 0 -36 1 -36 40 l0 40 43 0 c24 0 48 -5 55
                 <li class="p-3 font-bold text-black text-base border-b-2 border-white">about us</li>
                 <li class="p-3 font-bold text-black text-base border-b-2 border-white">contact us</li>
                 <li class="p-3 font-bold text-black text-base border-b-2 border-white">
-                    <div class="w-full flex justify-around flex-wrap">
+                    <div
+                            class="w-full flex justify-around flex-wrap">
                         <a href="">
                             <div class="w-full flex gap-2 px-2 py-1">
                                 <svg class="w-6" xmlns="http://www.w3.org/2000/svg" id="flag-icons-gb"
@@ -895,364 +787,106 @@ m154 -39 c33 -33 1 -68 -62 -68 -35 0 -36 1 -36 40 l0 40 43 0 c24 0 48 -5 55
             </ul>
         </nav>
     </div>
-    <div id="slider" class="relative w-full h-fit overflow-hidden flex items-center">
-        <button id="prev-btn"
-                class="z-10 absolute left-3 md:left-5 bg-ownBlue text-white px-2 py-2 sm:px-3 rounded-full hover:opacity-80 block">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                 stroke="currentColor" class="w-4 sm:w-5 h-fit">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M21 16.811c0 .864-.933 1.406-1.683.977l-7.108-4.061a1.125 1.125 0 0 1 0-1.954l7.108-4.061A1.125 1.125 0 0 1 21 8.689v8.122ZM11.25 16.811c0 .864-.933 1.406-1.683.977l-7.108-4.061a1.125 1.125 0 0 1 0-1.954l7.108-4.061a1.125 1.125 0 0 1 1.683.977v8.122Z"/>
-            </svg>
-        </button>
-        <button id="next-btn"
-                class="z-10 absolute right-3 md:right-5 bg-ownBlue text-white px-2 py-2 sm:px-3 rounded-full hover:opacity-80 block">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                 stroke="currentColor" class="w-4 sm:w-5 h-fit">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M3 8.689c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 0 1 0 1.954l-7.108 4.061A1.125 1.125 0 0 1 3 16.811V8.69ZM12.75 8.689c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 0 1 0 1.954l-7.108 4.061a1.125 1.125 0 0 1-1.683-.977V8.69Z"/>
-            </svg>
-        </button>
-
-        <div id="slider-box" class="w-full h-72 md:h-96 lg:h-[440px] relative bg-black">
-            <div class="slide w-full h-full absolute top-0 bg-[url('./images/img1.jpg')] bg-cover bg-no-repeat bg-right-bottom flex items-center">
-                <div class="w-1/2 md:w-3/5 bg-ownBlue-blur p-3 ml-14 md:ml-20 rounded-xl max-h-80">
-                    <p class="text-white text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 tracking-normal capitalize">
-                        Lorem ipsum dolor sit amet, consecrate radicalising elite.
-                    </p>
-                    <p class="text-white text-base md:text-lg xl:text-xl font-bold line-clamp-2 tracking-normal capitalize mt-2">
-                        Amet, asperiores aut doloremque et
-                        fuga fugit id ipsa modi mollitia nulla quisquam repudiandae rerum sapiente sint sit soluta
-                        tempore vitae voluptate.
-                    </p>
-                    <button class="bg-amber-500 hover:bg-amber-600 text-xs md:text-base font-medium md:font-semibold text-white rounded-md px-2 py-1 md:px-4 md:py-2 capitalize mt-3 float-right">
-                        show me
-                    </button>
-                </div>
-            </div>
-            <!------------->
-            <div class="slide w-full h-full absolute top-0 bg-[url('./images/img2.jpg')] bg-cover bg-no-repeat bg-right-bottom flex items-center">
-                <div class="w-1/2 md:w-3/5 bg-ownBlue-blur p-3 ml-14 md:ml-20 rounded-xl max-h-80">
-                    <p class="text-white text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 tracking-normal capitalize">
-                        Lorem ipsum dolor sit amet, consecrate radicalising elite.
-                    </p>
-                    <p class="text-white text-base md:text-lg xl:text-xl font-bold line-clamp-2 tracking-normal capitalize mt-2">
-                        Amet, asperiores aut doloremque et
-                        fuga fugit id ipsa modi mollitia nulla quisquam repudiandae rerum sapiente sint sit soluta
-                        tempore vitae voluptate.
-                    </p>
-                    <button class="bg-amber-500 hover:bg-amber-600 text-xs md:text-base font-medium md:font-semibold text-white rounded-md px-2 py-1 md:px-4 md:py-2 capitalize mt-3 float-right">
-                        show me
-                    </button>
-                </div>
-            </div>
-            <!------------->
-            <div class="slide w-full h-full absolute top-0 bg-[url('./images/img3.jpg')] bg-cover bg-no-repeat bg-right-bottom flex items-center">
-                <div class="w-1/2 md:w-3/5 bg-ownBlue-blur p-3 ml-14 md:ml-20 rounded-xl max-h-80">
-                    <p class="text-white text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 tracking-normal capitalize">
-                        Lorem ipsum dolor sit amet, consecrate radicalising elite.
-                    </p>
-                    <p class="text-white text-base md:text-lg xl:text-xl font-bold line-clamp-2 tracking-normal capitalize mt-2">
-                        Amet, asperiores aut doloremque et
-                        fuga fugit id ipsa modi mollitia nulla quisquam repudiandae rerum sapiente sint sit soluta
-                        tempore vitae voluptate.
-                    </p>
-                    <button class="bg-amber-500 hover:bg-amber-600 text-xs md:text-base font-medium md:font-semibold text-white rounded-md px-2 py-1 md:px-4 md:py-2 capitalize mt-3 float-right">
-                        show me
-                    </button>
-                </div>
-            </div>
-            <!------------->
-            <div class="slide w-full h-full absolute top-0 bg-[url('./images/img4.jpg')] bg-cover bg-no-repeat bg-right-bottom flex items-center">
-                <div class="w-1/2 md:w-3/5 bg-ownBlue-blur p-3 ml-14 md:ml-20 rounded-xl max-h-80">
-                    <p class="text-white text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 tracking-normal capitalize">
-                        Lorem ipsum dolor sit amet, consecrate radicalising elite.
-                    </p>
-                    <p class="text-white text-base md:text-lg xl:text-xl font-bold line-clamp-2 tracking-normal capitalize mt-2">
-                        Amet, asperiores aut doloremque et
-                        fuga fugit id ipsa modi mollitia nulla quisquam repudiandae rerum sapiente sint sit soluta
-                        tempore vitae voluptate.
-                    </p>
-                    <button class="bg-amber-500 hover:bg-amber-600 text-xs md:text-base font-medium md:font-semibold text-white rounded-md px-2 py-1 md:px-4 md:py-2 capitalize mt-3 float-right">
-                        show me
-                    </button>
-                </div>
-            </div>
-            <!------------->
-            <div class="slide w-full h-full absolute top-0 bg-[url('./images/img5.jpg')] bg-cover bg-no-repeat bg-right-bottom flex items-center">
-                <div class="w-1/2 md:w-3/5 bg-ownBlue-blur p-3 ml-14 md:ml-20 rounded-xl max-h-80">
-                    <p class="text-white text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 tracking-normal capitalize">
-                        Lorem ipsum dolor sit amet, consecrate radicalising elite.
-                    </p>
-                    <p class="text-white text-base md:text-lg xl:text-xl font-bold line-clamp-2 tracking-normal capitalize mt-2">
-                        Amet, asperiores aut doloremque et
-                        fuga fugit id ipsa modi mollitia nulla quisquam repudiandae rerum sapiente sint sit soluta
-                        tempore vitae voluptate.
-                    </p>
-                    <button class="bg-amber-500 hover:bg-amber-600 text-xs md:text-base font-medium md:font-semibold text-white rounded-md px-2 py-1 md:px-4 md:py-2 capitalize mt-3 float-right">
-                        show me
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div id="progress-box" class="z-10 w-full h-1.5 px-3 absolute bottom-0">
-            <div id="progress-bar" class="w-0 h-full bg-ownBlue rounded-full"></div>
-        </div>
-    </div>
 </header>
 
+<main class="w-full h-screen overflow-hidden overflow-y-scroll snap-y snap-mandatory">
+    <div class="relative w-full h-full snap-start">
+        <video class="w-full h-full object-cover" src="./videos/video1.mp4" autoplay loop muted></video>
 
-<main class="w-full px-3 md:px-8 lg:px-10 xl:px-12">
-    <!-------------------------Text Bar------------------------->
-    <div class="w-full h-10 mt-24 bg-ownBlue flex items-center justify-center bg-gradient-to-r from-sky-800 via-sky-500 to-sky-800">
-        <p class="text-white capitalize tracking-wider font-semibold text-xl">
-            know more about us
-        </p>
-    </div>
-
-    <!-------------------------Text & Pics------------------------->
-    <div class="mt-10">
-        <div class="flex flex-col md:flex-row items-center gap-4 lg:gap-8">
-            <img src="./images/img2.jpg" alt="" class="md:w-1/2 rounded-lg">
-            <div class="md:w-1/2 px-1.5 py-2 h-full">
-                <p class="text-xl md:text-2xl xl:text-3xl font-bold line-clamp-3 tracking-normal capitalize">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, non.
-                </p>
-                <p class="text-base md:text-lg xl:text-xl font-bold line-clamp-4 tracking-normal capitalize mt-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque ea eius expedita
-                    explicabo, illum modi obcaecati optio, pariatur ratione temporibus vel velit! Cum deserunt eius,
-                    natus optio quam vero!
-                </p>
-            </div>
-        </div>
-        <!-------->
-        <div class="flex flex-col-reverse md:flex-row items-center mt-20 gap-4 lg:gap-8">
-            <div class="md:w-1/2 px-1.5 py-2 h-full">
-                <p class="text-xl md:text-2xl xl:text-3xl font-bold line-clamp-3 tracking-normal capitalize">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, non.
-                </p>
-                <p class="text-base md:text-lg xl:text-xl font-bold line-clamp-4 tracking-normal capitalize mt-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ea et minus officiis quis ratione saepe
-                    sapiente sed veniam voluptas.
-                </p>
-            </div>
-            <img src="./images/img1.jpg" alt="" class="md:w-1/2 rounded-lg">
+        <div class="inscribe absolute top-0 w-full h-full bg-black/20 flex flex-col items-center justify-between">
+            <h1 class="text-white text-center text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-semibold tracking-wider capitalize w-full px-5 mt-5">
+                Video 1
+            </h1>
+            <h4 class="w-full text-white text-center text-lg sm:text-xl md:text-2xl font-semibold tracking-wider capitalize line-clamp-10 md:line-clamp-7 lg:line-clamp-6 xl:line-clamp-5 w-full px-5 md:px-8 mb-4 lg:px-10 xl:px-14 bg-black/30">
+                place of subtitle or description of video. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                adipisci asperiores, cum dolore eius eligendi eum ex facilis harum libero neque nobis, nostrum optio
+                perspiciatis porro repellat reprehenderit sed voluptatum. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Ab adipisci asperiores, cum dolore eius eligendi eum ex facilis harum libero neque
+                nobis, nostrum optio perspiciatis porro repellat reprehenderit sed voluptatum. Lorem ipsum dolor sit
+                amet, consectetur adipisicing elit. Ab adipisci asperiores, cum dolore eius eligendi eum ex facilis
+                harum libero neque nobis, nostrum optio perspiciatis porro repellat reprehenderit sed voluptatum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci asperiores, cum dolore eius
+                eligendi eum ex facilis harum libero neque nobis, nostrum optio perspiciatis porro repellat
+                reprehenderit sed voluptatum.
+            </h4>
         </div>
     </div>
+    <div class="relative w-full h-full snap-start">
+        <video class="w-full h-full object-cover" src="./videos/video3.mp4" autoplay loop muted></video>
 
-    <!-------------------------Text Bar------------------------->
-
-    <div class="w-full h-10 mt-40 bg-ownBlue flex items-center justify-center bg-gradient-to-r from-sky-800 via-sky-500 to-sky-800">
-        <p class="text-white capitalize tracking-wider font-semibold text-xl">
-            see some products
-        </p>
-    </div>
-
-    <!-------------------------Gallery------------------------->
-
-    <div id="gallery"
-         class="w-full mt-10 grid grid-cols-2 md:grid-cols-3 grid-rows-5 md:grid-rows-4 gap-2 lg:gap-4">
-        <div class="gallery_pic col-span-2 row-span-2 rounded-lg overflow-hidden relative bg-[url('./images/img1.jpg')] bg-cover bg-no-repeat bg-right-bottom border w-full bg-ownBlue">
-            <div class="gallery_subtitle w-full bg-black/80 h-fit absolute bottom-0 px-4 py-2">
-                <p class="w-full text-white tracking-wide line-clamp-3 lg:line-clamp-2 text-[10px] md:text-xs lg:text-sm xl:text-base overflow-hidden">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda et hic iste molestiae qui
-                    repellendus veritatis voluptatem. Accusamus aut doloremque doloribus dolorum impedit laboriosam nam
-                    nesciunt quasi quis, quisquam voluptas.
-                </p>
-            </div>
-        </div>
-        <!------------>
-        <div class="gallery_pic rounded-lg overflow-hidden relative bg-[url('./images/img2.jpg')] bg-cover bg-no-repeat bg-right-bottom border w-full h-32 sm:h-52 lg:h-56 xl:h-64 bg-ownBlue">
-            <div class="gallery_subtitle w-full bg-black/80 h-fit absolute bottom-0 px-4 py-2">
-                <p class="w-full text-white tracking-wide line-clamp-3 lg:line-clamp-2 text-[10px] md:text-xs lg:text-sm xl:text-base overflow-hidden">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias asperiores blanditiis
-                    doloremque error ex hic optio sequi similique tempora? Dicta laborum nostrum quia quibusdam rerum.
-                    Delectus impedit quas ut?
-                </p>
-            </div>
-        </div>
-        <!------------>
-        <div class="gallery_pic rounded-lg overflow-hidden relative bg-[url('./images/img3.jpg')] bg-cover bg-no-repeat bg-right-bottom border w-full h-32 sm:h-52 lg:h-56 xl:h-64 bg-ownBlue">
-            <div class="gallery_subtitle w-full bg-black/80 h-fit absolute bottom-0 px-4 py-2">
-                <p class="w-full text-white tracking-wide line-clamp-3 lg:line-clamp-2 text-[10px] md:text-xs lg:text-sm xl:text-base overflow-hidden">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias asperiores blanditiis
-                    doloremque error ex hic optio sequi similique tempora? Dicta laborum nostrum quia quibusdam rerum.
-                    Delectus impedit quas ut?
-                </p>
-            </div>
-        </div>
-        <!------------>
-        <div class="gallery_pic hidden md:block rounded-lg overflow-hidden relative bg-[url('./images/img4.jpg')] bg-cover bg-no-repeat bg-right-bottom row-span-2 border w-full bg-ownBlue">
-            <div class="gallery_subtitle w-full bg-black/80 h-fit absolute bottom-0 px-4 py-2">
-                <p class="w-full text-white tracking-wide line-clamp-3 lg:line-clamp-2 text-[10px] md:text-xs lg:text-sm xl:text-base overflow-hidden">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias asperiores blanditiis
-                    doloremque error ex hic optio sequi similique tempora? Dicta laborum nostrum quia quibusdam rerum.
-                    Delectus impedit quas ut?
-                </p>
-            </div>
-        </div>
-        <!------------>
-        <div class="gallery_pic row-span-2 md:row-span-1 col-span-2 rounded-lg overflow-hidden relative bg-[url('./images/img2.jpg')] bg-cover bg-no-repeat bg-right-bottom border w-full bg-ownBlue">
-            <div class="gallery_subtitle w-full bg-black/80 h-fit absolute bottom-0 px-4 py-2">
-                <p class="w-full text-white tracking-wide line-clamp-3 lg:line-clamp-2 text-[10px] md:text-xs lg:text-sm xl:text-base overflow-hidden">
-                    Lorem ipsum dolor sit amet elit. Dicta laborum nostrum quia quibusdam rerum.
-                    Delectus impedit quas ut?
-                </p>
-            </div>
-        </div>
-        <!------------>
-        <div class="gallery_pic rounded-lg overflow-hidden relative bg-[url('./images/img1.jpg')] bg-cover bg-no-repeat bg-right-bottom border w-full h-32 sm:h-52 lg:h-56 xl:h-64 bg-ownBlue">
-            <div class="gallery_subtitle w-full bg-black/80 h-fit absolute bottom-0 px-4 py-2">
-                <p class="w-full text-white tracking-wide line-clamp-3 lg:line-clamp-2 text-[10px] md:text-xs lg:text-sm xl:text-base overflow-hidden">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias asperiores blanditiis
-                    doloremque error ex hic optio sequi similique tempora? Dicta laborum nostrum quia quibusdam rerum.
-                    Delectus impedit quas ut?
-                </p>
-            </div>
-        </div>
-        <!------------>
-        <div class="gallery_pic rounded-lg overflow-hidden relative bg-[url('./images/img5.jpg')] bg-cover bg-no-repeat bg-right-bottom border w-full h-32 sm:h-52 lg:h-56 xl:h-64 bg-ownBlue">
-            <div class="gallery_subtitle w-full bg-black/80 h-fit absolute bottom-0 px-4 py-2">
-                <p class="w-full text-white tracking-wide line-clamp-3 lg:line-clamp-2 text-[10px] md:text-xs lg:text-sm xl:text-base overflow-hidden">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias asperiores blanditiis
-                    doloremque error ex hic optio sequi similique tempora? Dicta laborum nostrum quia quibusdam rerum.
-                    Delectus impedit quas ut?
-                </p>
-            </div>
+        <div class="inscribe absolute top-0 w-full h-full bg-black/20 flex flex-col items-center justify-between">
+            <h1 class="text-white text-center text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-semibold tracking-wider capitalize w-full px-5">
+                Video 2
+            </h1>
+            <h4 class="w-full text-white text-center text-lg sm:text-xl md:text-2xl font-semibold tracking-wider capitalize line-clamp-10 md:line-clamp-7 lg:line-clamp-6 xl:line-clamp-5 w-full px-5 md:px-8 mb-4 lg:px-10 xl:px-14 bg-black/30">
+                place of subtitle or description of video. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                adipisci asperiores, cum dolore eius eligendi eum ex facilis harum libero neque nobis.
+            </h4>
         </div>
     </div>
+    <div class="relative w-full h-full snap-start">
+        <video class="w-full h-full object-cover" src="./videos/video4.mp4" autoplay loop muted></video>
 
-    <!-------------------------Video------------------------->
-
-    <div class="relative w-full h-fit overflow-hidden flex items-start mt-14 rounded-xl border-8 border-white shadow-2xl shadow-outline">
-        <video class="w-full h-fit" src="./videos/video1.mp4" autoplay loop muted></video>
-        <div class="absolute insert-3 w-full h-full bg-black/20 flex justify-start items-end">
-            <p class="text-white text-xl md:text-2xl xl:text-3xl font-semibold line-clamp-1 tracking-wide capitalize w-full px-5 md:px-8 mb-4 lg:px-10 xl:px-14 bg-black/30">
-                Hello
-            </p>
+        <div class="inscribe absolute top-0 w-full h-full bg-black/20 flex flex-col items-center justify-between">
+            <h1 class="text-white text-center text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-semibold tracking-wider capitalize w-full px-5">
+                Video 3
+            </h1>
+            <h4 class="w-full text-white text-center text-lg sm:text-xl md:text-2xl font-semibold tracking-wider capitalize line-clamp-10 md:line-clamp-7 lg:line-clamp-6 xl:line-clamp-5 w-full px-5 md:px-8 mb-4 lg:px-10 xl:px-14 bg-black/30">
+                place of subtitle or description of video. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                adipisci asperiores, cum dolore eius eligendi eum ex facilis harum libero neque nobis, nostrum optio
+                perspiciatis porro repellat reprehenderit sed voluptatum. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Ab adipisci asperiores, cum dolore eius eligendi eum ex facilis harum libero.
+            </h4>
         </div>
     </div>
+    <div class="w-full h-full snap-start flex flex-col justify-end bg-gradient-to-br from-sky-800 via-sky-600 to-purple-700">
+        <div class="py-12 px-4 flex flex-col md:flex-row justify-center md:justify-around items-center gap-10 md:gap-2">
+            <div class="text-white tracking-wider flex flex-col sm:flex-row justify-center items-center sm:items-start gap-10">
+                <div class="grid grid-cols-1 grid-rows-2 justify-center items-center">
+                    <!--     timetable     -->
+                    <div class="flex flex-col items-center gap-6">
+                        <h4 class="capitalize text-lg md:text-xl xl:text-2xl font-semibold underline decoration-2 underline-offset-8">
+                            working hours
+                        </h4>
+                        <!--     timetable list     -->
+                        <ul class="capitalize list-none divide-y text-base md:text-lg xl:text-xl font-semibold">
+                            <li class="flex justify-between gap-4">
+                                <span>monday-saturday</span>
+                                <span>8:00-17:00</span>
+                            </li>
+                            <li class="flex justify-between gap-4">
+                                <span>friday</span>
+                                <span>8:00-13:30</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--     email     -->
+                    <div class="flex items-center justify-center gap-2">
+                        <svg class="w-6 h-fit fill-none stroke-white stroke-2" xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
+                        </svg>
 
-    <!-------------------------Text Bar------------------------->
-
-    <div class="w-full h-10 mt-40 bg-ownBlue flex items-center justify-center bg-gradient-to-r from-sky-800 via-sky-500 to-sky-800">
-        <p class="text-white capitalize tracking-wider font-semibold text-xl">
-            read some descriptions
-        </p>
-    </div>
-
-    <!-------------------------Cards------------------------->
-
-    <div class="mt-10 w-full grid grid-cols-2 md:grid-cols-3 grid-rows-1 gap-2 sm:gap-4 lg:gap-8">
-        <div class="flex flex-col text-white capitalize w-full bg-gradient-to-t from-sky-800 via-sky-600 to-purple-700 rounded-lg p-2 sm:p-2.5 drop-shadow-xl">
-            <div class="bg-white rounded-lg p-1 sm:p-1.5 drop-shadow-lg">
-                <img src="./images/img1.jpg" class="w-full h-fit">
-            </div>
-            <h3 class="text-base md:text-lg xl:text-xl font-semibold line-clamp-2 tracking-wider mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, id.
-            </h3>
-            <p class="text-sm md:text-base xl:text-lg line-clamp-6 tracking-wider mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at aut beatae debitis eius fugit id ipsum
-                laudantium, molestias nemo nobis officia porro quibusdam quidem reprehenderit sequi tenetur vitae,
-                voluptatum.
-            </p>
-            <div class="grow w-full h-fit flex justify-end items-end mt-5 pb-1 px-2">
-                <button class="px-1.5 py-1 capitalize border-2 border-white hover:font-bold hover:text-purple-700 hover:bg-white hover:border-purple-700 hover:border-4 active:ring-offset-4 active:ring-offset-sky-800 active:ring-2 active:ring-white rounded-md">
-                    read more
-                </button>
-            </div>
-        </div>
-        <div class="flex flex-col text-white capitalize w-full bg-gradient-to-t from-sky-800 via-sky-600 to-purple-700 rounded-lg p-2 sm:p-2.5 drop-shadow-xl">
-            <div class="bg-white rounded-lg p-1 sm:p-1.5 drop-shadow-lg">
-                <img src="./images/img1.jpg" class="w-full h-fit">
-            </div>
-            <h3 class="text-base md:text-lg xl:text-xl font-semibold line-clamp-2 tracking-wider mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, id.
-            </h3>
-            <p class="text-sm md:text-base xl:text-lg line-clamp-6 tracking-wider mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at aut beatae debitis eius fugit id ipsum
-                laudantium, molestias nemo nobis officia porro quibusdam quidem reprehenderit sequi tenetur vitae,
-                voluptatum.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at aut beatae debitis eius fugit id ipsum
-                laudantium, molestias nemo nobis officia porro quibusdam quidem reprehenderit sequi tenetur vitae,
-                voluptatum.
-            </p>
-            <div class="grow w-full h-fit flex justify-end items-end mt-5 pb-1 px-2">
-                <button class="px-1.5 py-1 capitalize border-2 border-white hover:font-bold hover:text-purple-700 hover:bg-white hover:border-purple-700 hover:border-4 active:ring-offset-4 active:ring-offset-sky-800 active:ring-2 active:ring-white rounded-md">
-                    read more
-                </button>
-            </div>
-        </div>
-        <!------------->
-        <div class="hidden md:flex md:flex-col text-white capitalize w-full bg-gradient-to-t from-sky-800 via-sky-600 to-purple-700 rounded-lg p-2 sm:p-2.5 drop-shadow-xl">
-            <div class="bg-white rounded-lg p-1 sm:p-1.5 drop-shadow-lg">
-                <img src="./images/img1.jpg" class="w-full h-fit">
-            </div>
-            <h3 class="text-base md:text-lg xl:text-xl font-semibold line-clamp-2 tracking-wider mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, id.
-            </h3>
-            <p class="text-sm md:text-base xl:text-lg line-clamp-6 tracking-wider mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at aut beatae debitis eius fugit id ipsum
-                laudantium.
-            </p>
-            <div class="grow w-full flex justify-end items-end mt-5 pb-1 px-2">
-                <button class="px-1.5 py-1 capitalize border-2 border-white hover:font-bold hover:text-purple-700 hover:bg-white hover:border-purple-700 hover:border-4 active:ring-offset-4 active:ring-offset-sky-800 active:ring-2 active:ring-white rounded-md">
-                    read more
-                </button>
-            </div>
-        </div>
-    </div>
-
-</main>
-
-<footer class="w-full mt-32 bg-gradient-to-br from-sky-800 via-sky-600 to-purple-700">
-    <div class="py-12 px-4 flex flex-col md:flex-row justify-center md:justify-around items-center gap-10 md:gap-2">
-        <div class="text-white tracking-wider flex flex-col sm:flex-row justify-center items-center sm:items-start gap-10">
-            <div class="grid grid-cols-1 grid-rows-2 justify-center items-center">
-                <!--     timetable     -->
-                <div class="flex flex-col items-center gap-6">
+                        <h3 class="capitalize text-base md:text-lg xl:text-xl font-semibold text-center">
+                            email:
+                            <a href="mailto:example@gmail.com" target="_blank" class="lowercase">
+                                example@gmail.com
+                            </a>
+                        </h3>
+                    </div>
+                </div>
+                <!--     contact     -->
+                <div class="flex flex-col items-center gap-6" id="contact">
                     <h4 class="capitalize text-lg md:text-xl xl:text-2xl font-semibold underline decoration-2 underline-offset-8">
-                        working hours
+                        contact us
                     </h4>
-                    <!--     timetable list     -->
-                    <ul class="capitalize list-none divide-y text-base md:text-lg xl:text-xl font-semibold">
-                        <li class="flex justify-between gap-4">
-                            <span>monday-saturday</span>
-                            <span>8:00-17:00</span>
-                        </li>
-                        <li class="flex justify-between gap-4">
-                            <span>friday</span>
-                            <span>8:00-13:30</span>
-                        </li>
-                    </ul>
-                </div>
-                <!--     email     -->
-                <div class="flex items-center justify-center gap-2">
-                    <svg class="w-6 h-fit fill-none stroke-white stroke-2" xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
-                    </svg>
-
-                    <h3 class="capitalize text-base md:text-lg xl:text-xl font-semibold text-center">
-                        email:
-                        <a href="mailto:example@gmail.com" target="_blank" class="lowercase">
-                            example@gmail.com
-                        </a>
-                    </h3>
-                </div>
-            </div>
-            <!--     contact     -->
-            <div class="flex flex-col items-center gap-6" id="contact">
-                <h4 class="capitalize text-lg md:text-xl xl:text-2xl font-semibold underline decoration-2 underline-offset-8">
-                    contact us
-                </h4>
-                <ul class="list-none grid grid-cols-3 gap-3">
-                    <li>
-                        <svg class="w-12 md:w-14 h-fit fill-white hover:fill-sky-600 hover:bg-white rounded-full"
-                             viewBox="0 0 618.000000 618.000000" preserveAspectRatio="xMidYMid meet">
-                            <g transform="translate(0.000000,618.000000) scale(0.100000,-0.100000)">
-                                <path d="M2980 6167 c0 -10 -15 -14 -52 -14 -71 0 -278 -19 -353 -33 -102 -18
+                    <ul class="list-none grid grid-cols-3 gap-3">
+                        <li>
+                            <svg class="w-12 md:w-14 h-fit fill-white hover:fill-sky-600 hover:bg-white rounded-full"
+                                 viewBox="0 0 618.000000 618.000000" preserveAspectRatio="xMidYMid meet">
+                                <g transform="translate(0.000000,618.000000) scale(0.100000,-0.100000)">
+                                    <path d="M2980 6167 c0 -10 -15 -14 -52 -14 -71 0 -278 -19 -353 -33 -102 -18
 -207 -41 -265 -57 -30 -8 -80 -22 -110 -30 -30 -9 -70 -22 -88 -29 -18 -8 -40
 -14 -50 -14 -9 0 -26 -7 -36 -15 -11 -8 -28 -15 -39 -15 -10 0 -31 -6 -45 -13
 -15 -8 -43 -21 -62 -29 -72 -30 -107 -46 -170 -78 -96 -48 -173 -91 -191 -106
@@ -1293,15 +927,15 @@ m154 -39 c33 -33 1 -68 -62 -68 -35 0 -36 1 -36 40 l0 40 43 0 c24 0 48 -5 55
 660 3 5 81 8 175 7 94 -1 172 1 175 4 3 3 5 111 5 240 -1 135 3 254 9 281 6
 27 14 74 19 105 20 130 108 298 207 398 37 36 90 71 171 111 96 48 143 60 298
 78 27 3 52 8 54 10 3 2 142 3 310 2 l306 -3 0 -325z"/>
-                            </g>
-                        </svg>
-                    </li>
-                    <!--------------------->
-                    <li>
-                        <svg class="w-12 md:w-14 h-fit fill-white hover:fill-sky-600 hover:bg-white rounded-full"
-                             viewBox="0 0 618.000000 618.000000" preserveAspectRatio="xMidYMid meet">
-                            <g transform="translate(0.000000,618.000000) scale(0.100000,-0.100000)">
-                                <path d="M2640 6125 c-36 -8 -81 -14 -101 -14 -20 -1 -53 -8 -72 -16 -20 -8
+                                </g>
+                            </svg>
+                        </li>
+                        <!--------------------->
+                        <li>
+                            <svg class="w-12 md:w-14 h-fit fill-white hover:fill-sky-600 hover:bg-white rounded-full"
+                                 viewBox="0 0 618.000000 618.000000" preserveAspectRatio="xMidYMid meet">
+                                <g transform="translate(0.000000,618.000000) scale(0.100000,-0.100000)">
+                                    <path d="M2640 6125 c-36 -8 -81 -14 -101 -14 -20 -1 -53 -8 -72 -16 -20 -8
 -48 -15 -63 -15 -15 0 -52 -7 -83 -16 -244 -70 -308 -91 -364 -120 -16 -8 -35
 -14 -42 -14 -7 0 -26 -6 -42 -14 -15 -8 -89 -45 -163 -81 -74 -36 -148 -75
 -165 -85 -16 -11 -39 -24 -50 -30 -11 -6 -33 -19 -50 -30 -16 -11 -37 -23 -45
@@ -1338,7 +972,7 @@ m154 -39 c33 -33 1 -68 -62 -68 -35 0 -36 1 -36 40 l0 40 43 0 c24 0 48 -5 55
 -19 107 -20 164 -20 867 0 711 1 759 20 867 23 126 40 192 58 225 6 12 12 28
 12 36 0 8 7 20 15 27 8 7 15 18 15 26 0 20 81 134 141 198 72 77 140 128 236
 175 81 39 106 49 163 65 159 44 160 44 995 45 702 1 809 -1 875 -15z"/>
-                                <path d="M2250 4399 c-41 -3 -85 -10 -97 -17 -12 -7 -31 -12 -42 -12 -17 0
+                                    <path d="M2250 4399 c-41 -3 -85 -10 -97 -17 -12 -7 -31 -12 -42 -12 -17 0
 -52 -15 -101 -42 -8 -4 -22 -11 -30 -15 -17 -7 -87 -60 -110 -83 -29 -29 -80
 -98 -80 -108 0 -5 -7 -15 -15 -22 -8 -7 -15 -22 -15 -34 0 -12 -5 -27 -10 -32
 -6 -6 -20 -47 -30 -90 -19 -75 -20 -121 -20 -894 0 -769 2 -819 19 -886 11
@@ -1356,22 +990,22 @@ m154 -39 c33 -33 1 -68 -62 -68 -35 0 -36 1 -36 40 l0 40 43 0 c24 0 48 -5 55
 -425 552 -22 79 -23 312 0 376 8 24 15 52 15 61 0 10 6 31 14 47 8 15 24 48
 35 73 38 79 80 139 150 213 45 48 142 127 171 140 8 4 30 16 49 28 61 36 190
 78 271 88 93 10 277 2 317 -14z"/>
-                                <path d="M2940 3595 c-156 -29 -299 -132 -378 -273 -41 -73 -79 -245 -68 -303
+                                    <path d="M2940 3595 c-156 -29 -299 -132 -378 -273 -41 -73 -79 -245 -68 -303
 4 -19 11 -57 15 -85 11 -66 54 -155 107 -225 43 -56 142 -139 167 -139 7 0 18
 -5 25 -12 30 -30 90 -42 229 -45 114 -3 148 -1 172 11 17 9 39 16 49 16 11 0
 25 7 32 15 7 8 21 15 32 15 26 0 208 182 208 207 0 10 5 24 12 31 19 19 40 84
 47 147 3 33 10 65 14 72 10 15 -11 143 -35 218 -11 33 -30 74 -44 92 -13 17
 -24 36 -24 41 0 19 -139 140 -186 162 -27 12 -58 27 -69 33 -24 13 -146 33
 -200 34 -22 0 -69 -5 -105 -12z"/>
-                            </g>
-                        </svg>
-                    </li>
-                    <!--------------------->
-                    <li>
-                        <svg class="w-12 md:w-14 h-fit fill-white hover:fill-sky-600 hover:bg-white rounded-full"
-                             viewBox="0 0 618.000000 618.000000" preserveAspectRatio="xMidYMid meet">
-                            <g transform="translate(0.000000,618.000000) scale(0.100000,-0.100000)">
-                                <path d="M2978 6168 c-3 -7 -30 -13 -69 -14 -155 -6 -288 -23 -469 -60 -106
+                                </g>
+                            </svg>
+                        </li>
+                        <!--------------------->
+                        <li>
+                            <svg class="w-12 md:w-14 h-fit fill-white hover:fill-sky-600 hover:bg-white rounded-full"
+                                 viewBox="0 0 618.000000 618.000000" preserveAspectRatio="xMidYMid meet">
+                                <g transform="translate(0.000000,618.000000) scale(0.100000,-0.100000)">
+                                    <path d="M2978 6168 c-3 -7 -30 -13 -69 -14 -155 -6 -288 -23 -469 -60 -106
 -22 -277 -69 -328 -90 -18 -8 -41 -14 -50 -14 -10 0 -27 -7 -38 -15 -10 -8
 -27 -15 -36 -15 -9 0 -29 -6 -45 -14 -15 -7 -44 -20 -63 -28 -130 -54 -297
 -138 -347 -175 -17 -12 -36 -23 -41 -23 -5 0 -28 -13 -50 -30 -23 -16 -45 -30
@@ -1408,10 +1042,10 @@ m154 -39 c33 -33 1 -68 -62 -68 -35 0 -36 1 -36 40 l0 40 43 0 c24 0 48 -5 55
 -85 -88 -78 31 -73 -1650 -70 -1283 3 -1504 5 -1530 17 -55 27 -113 80 -134
 124 l-21 43 0 1542 c0 1525 0 1542 20 1579 33 61 52 80 114 112 l58 31 1513 0
 c1505 0 1513 0 1559 -21z"/>
-                                <path d="M2040 4203 c-137 -61 -190 -134 -190 -260 0 -108 47 -187 144 -242
+                                    <path d="M2040 4203 c-137 -61 -190 -134 -190 -260 0 -108 47 -187 144 -242
 54 -31 232 -34 286 -5 104 56 160 147 160 256 0 67 -48 164 -104 210 -59 49
 -226 72 -296 41z"/>
-                                <path d="M3515 3484 c-105 -32 -184 -82 -248 -156 -27 -31 -49 -48 -56 -44 -7
+                                    <path d="M3515 3484 c-105 -32 -184 -82 -248 -156 -27 -31 -49 -48 -56 -44 -7
 5 -11 35 -10 86 1 43 -2 83 -5 89 -9 14 -492 15 -501 2 -7 -13 -7 -1549 0
 -1562 4 -6 101 -9 252 -9 221 1 246 3 250 18 2 9 5 215 7 457 1 242 5 449 8
 460 3 11 8 37 13 57 4 21 13 42 21 49 8 6 14 17 14 23 0 16 67 78 113 104 30
@@ -1419,17 +1053,17 @@ c1505 0 1513 0 1559 -21z"/>
 10 -486 8 -13 48 -15 260 -15 212 0 252 2 260 15 6 9 10 206 10 485 0 419 -2
 481 -19 575 -21 113 -32 151 -65 218 -40 84 -49 96 -111 156 -110 109 -235
 156 -415 155 -64 0 -124 -6 -155 -15z"/>
-                                <path d="M1887 3463 c-9 -8 -9 -1536 -1 -1557 5 -14 37 -16 250 -16 l244 0 15
+                                    <path d="M1887 3463 c-9 -8 -9 -1536 -1 -1557 5 -14 37 -16 250 -16 l244 0 15
 23 c13 20 15 118 12 781 -2 660 -4 758 -17 766 -17 11 -493 14 -503 3z"/>
-                            </g>
-                        </svg>
-                    </li>
-                    <!--------------------->
-                    <li>
-                        <svg class="w-12 md:w-14 h-fit fill-white hover:fill-sky-600 hover:bg-white rounded-full"
-                             viewBox="0 0 618.000000 618.000000" preserveAspectRatio="xMidYMid meet">
-                            <g transform="translate(0.000000,618.000000) scale(0.100000,-0.100000)">
-                                <path d="M2888 6168 c-3 -7 -20 -14 -39 -14 -131 -7 -305 -31 -419 -59 -30 -8
+                                </g>
+                            </svg>
+                        </li>
+                        <!--------------------->
+                        <li>
+                            <svg class="w-12 md:w-14 h-fit fill-white hover:fill-sky-600 hover:bg-white rounded-full"
+                                 viewBox="0 0 618.000000 618.000000" preserveAspectRatio="xMidYMid meet">
+                                <g transform="translate(0.000000,618.000000) scale(0.100000,-0.100000)">
+                                    <path d="M2888 6168 c-3 -7 -20 -14 -39 -14 -131 -7 -305 -31 -419 -59 -30 -8
 -68 -16 -85 -19 -16 -3 -61 -15 -100 -26 -38 -12 -83 -25 -100 -30 -60 -17
 -173 -58 -208 -76 -16 -8 -33 -14 -38 -14 -9 0 -131 -54 -159 -71 -8 -5 -22
 -12 -30 -15 -8 -3 -22 -9 -30 -14 -8 -5 -37 -21 -65 -35 -27 -14 -63 -34 -80
@@ -1464,13 +1098,13 @@ c1505 0 1513 0 1559 -21z"/>
 20 -68 17 -1171 -3 -1262 3 -1172 -77 -1243 -88 -78 52 -72 -1775 -75 l-1630
 -3 -63 32 c-73 38 -125 100 -154 182 -16 47 -17 127 -18 1122 0 1045 0 1072
 20 1129 41 118 117 186 235 211 47 10 3157 8 3224 -2z"/>
-                                <path d="M1780 4312 c-13 -5 -13 -32 0 -32 5 0 118 -81 250 -180 132 -99 244
+                                    <path d="M1780 4312 c-13 -5 -13 -32 0 -32 5 0 118 -81 250 -180 132 -99 244
 -180 248 -180 5 0 19 -12 33 -26 13 -14 43 -37 67 -51 23 -14 42 -28 42 -31 0
 -4 24 -23 52 -42 29 -19 175 -126 324 -237 149 -112 277 -203 284 -203 7 0
 108 71 224 158 116 87 227 167 246 179 20 12 46 33 59 47 14 14 28 26 33 26 5
 0 106 73 226 163 119 90 233 173 252 184 20 12 46 33 59 47 14 14 28 26 33 26
 12 0 188 133 188 142 0 5 -6 8 -12 8 -583 3 -2601 4 -2608 2z"/>
-                                <path d="M1706 3527 c-10 -37 -7 -1661 4 -1677 8 -12 13 -11 39 8 17 12 33 22
+                                    <path d="M1706 3527 c-10 -37 -7 -1661 4 -1677 8 -12 13 -11 39 8 17 12 33 22
 36 22 4 0 33 20 65 45 32 25 61 45 65 45 3 0 41 26 83 58 43 31 85 62 94 67 9
 6 56 37 103 70 48 33 94 65 103 70 9 6 50 35 92 65 42 30 83 60 92 65 41 25
 138 92 190 132 31 24 59 43 63 43 4 0 32 19 63 43 31 23 76 55 100 70 23 15
@@ -1478,7 +1112,7 @@ c1505 0 1513 0 1559 -21z"/>
 0 -32 19 -63 43 -32 23 -65 47 -74 52 -9 6 -55 37 -103 70 -47 33 -94 65 -103
 70 -9 6 -42 29 -74 53 -31 23 -59 42 -63 42 -4 0 -32 19 -63 43 -53 39 -241
 169 -280 192 -9 6 -42 28 -72 50 -89 65 -97 68 -104 42z"/>
-                                <path d="M4425 3536 c-11 -6 -45 -29 -75 -51 -30 -22 -63 -44 -72 -50 -9 -5
+                                    <path d="M4425 3536 c-11 -6 -45 -29 -75 -51 -30 -22 -63 -44 -72 -50 -9 -5
 -76 -50 -148 -100 -72 -49 -139 -94 -148 -100 -9 -5 -50 -35 -92 -65 -42 -30
 -83 -59 -92 -65 -9 -5 -56 -37 -103 -70 -48 -33 -94 -64 -103 -70 -9 -5 -42
 -29 -74 -52 -31 -24 -59 -43 -63 -43 -4 0 -33 -20 -65 -45 -32 -25 -61 -45
@@ -1487,7 +1121,7 @@ c1505 0 1513 0 1559 -21z"/>
 -65 42 -30 83 -59 92 -65 31 -19 133 -90 190 -132 31 -24 59 -43 63 -43 4 0
 32 -19 63 -43 60 -44 161 -115 190 -132 9 -6 30 -19 45 -29 24 -16 30 -17 38
 -5 10 16 11 1655 1 1680 -6 13 -11 14 -27 5z"/>
-                                <path d="M2985 2637 c-11 -7 -23 -16 -26 -20 -4 -5 -16 -14 -27 -20 -34 -20
+                                    <path d="M2985 2637 c-11 -7 -23 -16 -26 -20 -4 -5 -16 -14 -27 -20 -34 -20
 -133 -88 -194 -134 -31 -24 -59 -43 -63 -43 -4 0 -32 -19 -63 -43 -57 -42
 -159 -113 -190 -132 -9 -5 -50 -35 -92 -65 -42 -30 -83 -59 -92 -65 -9 -5 -56
 -37 -103 -70 -48 -33 -94 -64 -103 -70 -9 -5 -51 -36 -94 -67 -42 -32 -79 -58
@@ -1497,15 +1131,15 @@ c1505 0 1513 0 1559 -21z"/>
 47 -74 52 -31 18 -132 89 -190 132 -31 24 -59 43 -63 43 -4 0 -32 19 -63 43
 -55 42 -155 112 -190 132 -10 6 -32 20 -49 33 -34 24 -58 28 -69 11 -6 -10
 -44 -8 -89 5 -11 3 -29 0 -40 -7z"/>
-                            </g>
-                        </svg>
-                    </li>
-                    <!--------------------->
-                    <li>
-                        <svg class="w-12 md:w-14 h-fit fill-white hover:fill-sky-600 hover:bg-white rounded-full"
-                             viewBox="0 0 300.000000 300.000000" preserveAspectRatio="xMidYMid meet">
-                            <g transform="translate(0.000000,300.000000) scale(0.050000,-0.050000)">
-                                <path d="M2680 5988 c-2073 -250 -3289 -2464 -2369 -4313 732 -1475 2545
+                                </g>
+                            </svg>
+                        </li>
+                        <!--------------------->
+                        <li>
+                            <svg class="w-12 md:w-14 h-fit fill-white hover:fill-sky-600 hover:bg-white rounded-full"
+                                 viewBox="0 0 300.000000 300.000000" preserveAspectRatio="xMidYMid meet">
+                                <g transform="translate(0.000000,300.000000) scale(0.050000,-0.050000)">
+                                    <path d="M2680 5988 c-2073 -250 -3289 -2464 -2369 -4313 732 -1475 2545
 -2095 4005 -1369 1355 673 1996 2208 1525 3651 -424 1297 -1819 2193 -3161
 2031z m109 -2040 l379 -553 41 51 c23 28 235 277 471 552 l430 502 126 0 c72
 0 121 -8 115 -18 -6 -10 -249 -296 -540 -634 -315 -366 -523 -624 -515 -638 8
@@ -1513,18 +1147,18 @@ c1505 0 1513 0 1559 -21z"/>
 l-429 0 -373 545 c-205 300 -384 556 -397 570 -18 20 -128 -97 -513 -545
 l-489 -570 -128 0 c-120 0 -126 2 -98 35 210 247 1031 1205 1059 1236 37 41
 34 47 -325 570 -200 291 -457 666 -572 834 l-209 305 437 0 436 0 379 -552z"/>
-                                <path d="M1900 4294 c0 -3 408 -590 908 -1305 l907 -1299 193 -6 c105 -3 192
+                                    <path d="M1900 4294 c0 -3 408 -590 908 -1305 l907 -1299 193 -6 c105 -3 192
 2 192 10 -1 9 -366 538 -812 1176 -447 638 -853 1221 -903 1295 l-91 135 -197
 0 c-108 0 -197 -3 -197 -6z"/>
-                            </g>
-                        </svg>
-                    </li>
-                    <!--------------------->
-                    <li>
-                        <svg class="w-12 md:w-14 h-fit fill-white hover:fill-sky-600 hover:bg-white rounded-full"
-                             viewBox="0 0 618.000000 618.000000" preserveAspectRatio="xMidYMid meet">
-                            <g transform="translate(0.000000,618.000000) scale(0.100000,-0.100000)">
-                                <path d="M2814 6173 c10 -10 -99 -32 -166 -32 -31 -1 -69 -6 -84 -11 -14 -6
+                                </g>
+                            </svg>
+                        </li>
+                        <!--------------------->
+                        <li>
+                            <svg class="w-12 md:w-14 h-fit fill-white hover:fill-sky-600 hover:bg-white rounded-full"
+                                 viewBox="0 0 618.000000 618.000000" preserveAspectRatio="xMidYMid meet">
+                                <g transform="translate(0.000000,618.000000) scale(0.100000,-0.100000)">
+                                    <path d="M2814 6173 c10 -10 -99 -32 -166 -32 -31 -1 -69 -6 -84 -11 -14 -6
 -54 -15 -88 -20 -80 -13 -218 -47 -291 -72 -16 -5 -47 -13 -68 -18 -21 -4 -44
 -13 -50 -19 -6 -6 -19 -11 -29 -11 -9 0 -34 -7 -55 -16 -37 -16 -67 -29 -135
 -57 -53 -22 -300 -146 -333 -167 -16 -11 -39 -24 -50 -30 -31 -15 -55 -31
@@ -1581,7 +1215,7 @@ m531 -1187 c17 -4 59 -11 95 -15 79 -10 204 -42 320 -82 77 -27 247 -106 255
 43 45 80 25 36 45 67 45 70 0 16 138 182 220 264 102 102 279 242 355 280 11
 6 34 19 50 29 48 31 238 121 255 121 5 0 24 6 42 14 66 28 227 69 353 89 92
 14 401 17 460 3z"/>
-                                <path d="M2985 4689 c-27 -5 -77 -12 -110 -17 -74 -11 -149 -30 -193 -48 -18
+                                    <path d="M2985 4689 c-27 -5 -77 -12 -110 -17 -74 -11 -149 -30 -193 -48 -18
 -8 -39 -14 -47 -14 -15 0 -68 -21 -117 -46 -14 -8 -33 -14 -41 -14 -8 0 -20
 -7 -27 -15 -7 -8 -18 -15 -25 -15 -18 0 -102 -53 -215 -137 -146 -108 -311
 -291 -397 -438 -36 -62 -113 -223 -113 -236 0 -8 -7 -24 -15 -35 -8 -10 -15
@@ -1610,49 +1244,47 @@ c28 -14 81 -94 81 -120 0 -8 7 -27 15 -44 8 -17 22 -45 30 -62 8 -17 15 -35
 -166 244 0 8 -7 19 -15 26 -8 7 -15 19 -15 27 0 8 -6 27 -14 41 -35 64 -48
 132 -47 245 1 112 20 200 50 230 6 6 11 16 11 22 1 25 108 141 150 162 53 27
 146 31 189 8z"/>
-                            </g>
+                                </g>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-------------->
+            <div class="text-white tracking-wider flex flex-col items-center gap-6">
+                <h4 class="capitalize text-lg md:text-xl xl:text-2xl font-semibold underline decoration-2 underline-offset-8">
+                    subscribe newsletter
+                </h4>
+                <div class="flex justify-center justify-items-stretch">
+                    <button class="w-fit h-fit bg-white px-2 py-1 rounded-l-xl">
+                        <svg class="w-8 h-8 fill-stone-600 -rotate-45 hover:-skew-y-6 hover:fill-sky-500 active:fill-purple-600"
+                             xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"/>
                         </svg>
-                    </li>
-                </ul>
+                    </button>
+                    <input class="appearance-none bg-gray-100 text-black rounded-r-xl py-2 px-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                           type="text" placeholder="your_mail@example.com">
+                </div>
             </div>
         </div>
-        <!-------------->
-        <div class="text-white tracking-wider flex flex-col items-center gap-6">
-            <h4 class="capitalize text-lg md:text-xl xl:text-2xl font-semibold underline decoration-2 underline-offset-8">
-                subscribe newsletter
-            </h4>
-            <div class="flex justify-center justify-items-stretch">
-                <button class="w-fit h-fit bg-white px-2 py-1 rounded-l-xl">
-                    <svg class="w-8 h-8 fill-stone-600 -rotate-45 hover:-skew-y-6 hover:fill-sky-500 active:fill-purple-600"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"/>
-                    </svg>
-                </button>
-                <input class="appearance-none bg-gray-100 text-black rounded-r-xl py-2 px-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                       type="text" placeholder="your_mail@example.com">
-            </div>
+
+        <!-------------------------Copyright------------------------->
+
+        <div class="w-full py-5">
+            <p class="capitalize text-white text-center text-base tracking-wider font-semibold">
+                &copy; <span id="year"></span> colwey, water filtration co.
+            </p>
         </div>
     </div>
-
-    <!-------------------------Copyright------------------------->
-
-    <div class="w-full py-5">
-        <p class="capitalize text-white text-center text-base tracking-wider font-semibold">
-            &copy; <span id="year"></span> colwey, water filtration co.
-        </p>
-    </div>
-</footer>
-
+</main>
 </body>
 
 <!--Scripts-->
-<script src="./js/intro.js"></script>
-<script src="js/setBodyPadding.js"></script>
-<script src="./js/slider.js"></script>
 <script src="./js/toggle.js"></script>
 <script src="./js/langPopup.js"></script>
-<script src="./js/galleryAnimation.js"></script>
+<script src="./js/setVideoTextPadding.js"></script>
 <script src="./js/yearForCopyright.js"></script>
+<script src="js/toolbarStylesOnVideos.js"></script>
 </html>

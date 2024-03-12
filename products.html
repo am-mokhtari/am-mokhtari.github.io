@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,137 +9,27 @@
     <!--  Libraries  -->
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/tailwind.js"></script>
-    <script src="./js/jquery.waypoints.min.js"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         ownBlue: '#37a5dd',
-                    }
+                    },
+                    lineClamp: {
+                        7: '7',
+                        8: '8',
+                        9: '9',
+                        10: '10',
+                    },
                 }
             }
         }
     </script>
 
-    <!--  Styles  -->
-    <link rel="stylesheet" href="./css/homePageStyles.css">
-    <title>Title</title>
+    <title>Products</title>
 </head>
-
 <body>
-<div id="intro"
-     class="z-50 w-screen h-screen fixed top-0 bg-ownBlue bg-opacity-95 z-50 flex justify-center items-center">
-    <div class="w-1/2 md:w-1/3 h-fit">
-        <svg id="intro-logo" class="w-full h-fit hidden" viewBox="0 0 1043.000000 237.000000"
-             preserveAspectRatio="xMidYMid meet">
-
-            <g transform="translate(0.000000,237.000000) scale(0.100000,-0.100000)"
-               fill="#ffffff" stroke="none">
-                <path d="M685 2345 c-162 -38 -297 -114 -420 -239 -156 -159 -232 -321 -255
--552 -49 -481 226 -893 671 -1003 96 -24 292 -30 386 -12 281 54 511 239 615
-493 30 74 68 229 68 281 l0 27 -287 -2 -286 -3 -26 -63 c-50 -121 -132 -177
--261 -175 -90 1 -150 24 -205 79 -102 102 -129 301 -61 449 32 71 69 110 131
-140 164 81 348 11 402 -151 l20 -59 284 0 284 0 3 29 c7 56 -38 218 -88 321
--102 211 -265 351 -495 425 -60 20 -96 23 -245 26 -124 2 -192 -1 -235 -11z"/>
-                <path d="M2510 2345 c-373 -79 -648 -403 -679 -797 -13 -163 9 -341 55 -456
-125 -307 343 -483 687 -557 16 -3 90 -6 166 -6 112 1 154 5 233 25 315 80 546
-309 635 632 25 90 28 114 27 264 0 198 -18 280 -95 435 -59 119 -125 205 -217
-281 -74 61 -234 145 -327 171 -82 22 -393 28 -485 8z m316 -560 c74 -22 141
--79 183 -155 35 -64 36 -67 36 -180 0 -106 -2 -120 -28 -172 -34 -70 -110
--140 -174 -162 -26 -9 -79 -16 -118 -16 -127 0 -229 70 -287 196 -19 41 -23
-66 -23 154 0 94 3 111 27 161 74 150 230 220 384 174z"/>
-                <path d="M3790 1445 l0 -875 563 2 562 3 3 263 2 262 -275 0 -275 0 -2 608 -3
-607 -287 3 -288 2 0 -875z"/>
-                <path d="M4760 2315 c0 -3 27 -105 61 -228 33 -122 69 -256 80 -297 11 -41 35
--132 54 -202 20 -71 51 -188 71 -260 20 -73 42 -153 49 -178 7 -25 22 -83 35
--130 12 -47 28 -105 35 -130 7 -25 20 -72 28 -105 9 -33 26 -95 38 -138 l22
--77 296 2 295 3 7 30 c3 17 18 84 33 150 15 66 42 190 61 275 66 303 85 385
-94 415 l8 30 7 -25 c3 -14 38 -169 76 -345 76 -344 97 -439 112 -497 l9 -38
-294 0 294 0 12 43 c6 23 67 249 136 502 68 253 135 503 149 555 14 52 31 115
-38 140 8 25 21 74 31 110 9 36 25 94 35 130 49 177 70 256 70 263 0 4 -133 7
--295 7 l-294 0 -10 -37 c-5 -21 -14 -63 -20 -93 -6 -30 -26 -131 -46 -225 -19
--93 -58 -286 -87 -427 -28 -141 -55 -255 -59 -253 -3 3 -10 33 -13 67 -6 47
--142 757 -182 946 l-4 22 -254 0 -253 0 -86 -437 c-48 -241 -92 -472 -98 -513
--13 -92 -24 -106 -32 -42 -3 27 -28 157 -56 288 -28 132 -66 318 -86 414 -20
-96 -42 200 -49 230 l-13 55 -297 3 c-163 1 -296 0 -296 -3z"/>
-                <path d="M7400 1445 l0 -875 615 0 615 0 0 239 c0 213 -2 240 -17 245 -9 4
--154 6 -322 6 l-306 -1 0 93 0 93 263 3 262 2 0 205 0 205 -265 0 -265 0 0 90
-0 90 320 0 320 0 0 240 0 240 -610 0 -610 0 0 -875z"/>
-                <path d="M8690 2314 c0 -4 43 -90 96 -193 160 -309 244 -470 304 -586 32 -60
-85 -165 119 -232 l62 -121 -1 -304 -1 -303 286 0 287 0 -2 308 -1 307 87 168
-c48 92 106 203 129 247 23 44 86 166 140 270 54 105 129 247 166 318 l67 127
--318 0 c-293 0 -318 -1 -325 -17 -4 -10 -33 -88 -65 -173 -33 -85 -80 -209
--105 -275 -25 -66 -48 -127 -51 -135 -8 -22 -13 -10 -88 191 -36 96 -85 226
--109 289 l-44 115 -317 3 c-174 1 -316 -1 -316 -4z"/>
-                <path d="M342 298 c-15 -19 47 -257 71 -272 31 -20 50 5 76 103 13 50 26 89
-28 87 3 -2 17 -46 31 -98 26 -91 28 -93 57 -93 30 0 30 0 63 128 19 70 31 134
-28 142 -3 8 -14 15 -25 15 -21 0 -29 -18 -55 -135 l-13 -60 -17 60 c-34 122
--39 130 -71 130 -29 0 -30 -2 -56 -95 -28 -101 -28 -100 -50 5 -7 33 -16 68
--21 78 -10 20 -31 22 -46 5z"/>
-                <path d="M1073 298 c-21 -25 -105 -248 -99 -263 11 -29 44 -17 57 20 13 34 14
-35 69 35 54 0 57 -1 73 -35 17 -37 53 -48 63 -21 3 8 -19 72 -48 143 -47 113
--56 128 -79 131 -14 2 -31 -3 -36 -10z m63 -165 c-2 -3 -20 -3 -39 -1 l-35 3
-21 55 20 55 19 -54 c10 -30 16 -56 14 -58z"/>
-                <path d="M3816 295 c-9 -25 -7 -248 3 -263 5 -8 17 -12 27 -10 18 3 19 14 19
-143 0 135 -1 140 -21 143 -13 2 -24 -4 -28 -13z"/>
-                <path d="M4195 298 c-3 -8 -4 -72 -3 -144 l3 -129 94 -3 c95 -3 116 4 104 35
--4 9 -26 13 -74 13 l-68 0 -3 118 c-3 113 -4 117 -26 120 -12 2 -24 -3 -27
--10z"/>
-                <path d="M6363 298 c-21 -25 -105 -248 -99 -263 11 -29 44 -17 57 20 13 34 14
-35 69 35 54 0 57 -1 73 -35 17 -37 53 -48 63 -21 3 8 -19 72 -48 143 -47 113
--56 128 -79 131 -14 2 -31 -3 -36 -10z m63 -165 c-2 -3 -20 -3 -39 -1 l-35 3
-21 55 20 55 19 -54 c10 -30 16 -56 14 -58z"/>
-                <path d="M7336 295 c-9 -25 -7 -248 3 -263 5 -8 17 -12 27 -10 18 3 19 14 19
-143 0 135 -1 140 -21 143 -13 2 -24 -4 -28 -13z"/>
-                <path d="M7785 300 c-11 -4 -31 -20 -45 -35 -22 -23 -25 -36 -25 -101 0 -70 2
--75 32 -106 27 -27 41 -32 90 -35 70 -5 117 19 139 72 30 73 9 160 -48 195
--34 21 -105 26 -143 10z m108 -50 c47 -38 45 -136 -5 -173 -55 -41 -118 5
--118 88 0 87 64 131 123 85z"/>
-                <path d="M8311 296 c-8 -9 -11 -56 -9 -142 3 -125 4 -129 25 -132 27 -4 32 12
-35 112 l3 68 60 -88 c49 -72 65 -89 85 -89 l25 0 0 140 c0 133 -1 140 -20 140
--18 0 -20 -8 -25 -94 l-5 -95 -64 97 c-64 97 -85 113 -110 83z"/>
-                <path d="M9093 290 c-42 -25 -63 -68 -63 -125 0 -95 48 -145 138 -145 39 0 57
-6 81 25 36 31 47 61 31 80 -19 22 -29 18 -51 -20 -65 -109 -176 -3 -125 119
-24 58 95 59 126 2 15 -30 32 -33 50 -11 11 13 10 21 -7 43 -40 54 -120 69
--180 32z"/>
-                <path d="M9665 300 c-11 -4 -31 -20 -45 -35 -22 -23 -25 -36 -25 -101 0 -70 2
--75 32 -106 27 -27 41 -32 90 -35 70 -5 117 19 139 72 30 73 9 160 -48 195
--34 21 -105 26 -143 10z m108 -50 c47 -38 45 -136 -5 -173 -55 -41 -118 5
--118 88 0 87 64 131 123 85z"/>
-                <path d="M1514 286 c-10 -25 5 -36 46 -36 l39 0 3 -106 c2 -87 6 -109 20 -117
-12 -8 21 -7 32 2 13 11 16 35 16 117 l0 103 43 3 c34 2 42 7 42 23 0 19 -8 20
--118 23 -96 2 -118 0 -123 -12z"/>
-                <path d="M2054 287 c-2 -7 -3 -69 -2 -138 l3 -124 108 -3 c102 -3 107 -2 107
-18 0 18 -6 20 -80 20 l-80 0 0 45 0 44 73 3 c56 2 72 6 72 18 0 12 -16 16 -72
-18 l-73 3 0 34 0 34 78 3 c60 2 77 6 77 18 0 21 -203 28 -211 7z"/>
-                <path d="M2584 287 c-2 -7 -3 -69 -2 -138 l3 -124 25 0 c23 0 25 4 28 57 2 44
-7 58 18 58 29 0 52 -20 83 -70 31 -50 65 -66 77 -36 7 18 -17 65 -45 90 l-21
-19 29 18 c36 22 46 60 27 98 -20 37 -32 41 -132 41 -60 0 -86 -4 -90 -13z
-m154 -39 c33 -33 1 -68 -62 -68 -35 0 -36 1 -36 40 l0 40 43 0 c24 0 48 -5 55
--12z"/>
-                <path d="M3305 287 c-3 -7 -4 -69 -3 -138 l3 -124 25 0 c24 0 25 3 28 62 l3
-62 57 3 c43 2 57 7 57 18 0 11 -14 16 -57 18 l-58 3 0 34 0 34 68 3 c52 2 67
-6 67 18 0 21 -183 28 -190 7z"/>
-                <path d="M4664 286 c-10 -25 5 -36 46 -36 l39 0 3 -106 c2 -87 6 -109 20 -117
-12 -8 21 -7 32 2 13 11 16 35 16 117 l0 103 43 3 c34 2 42 7 42 23 0 19 -8 20
--118 23 -96 2 -118 0 -123 -12z"/>
-                <path d="M5204 287 c-2 -7 -3 -69 -2 -138 l3 -124 108 -3 c102 -3 107 -2 107
-18 0 18 -6 20 -80 20 l-80 0 0 45 0 44 73 3 c56 2 72 6 72 18 0 12 -16 16 -72
-18 l-73 3 0 34 0 34 78 3 c60 2 77 6 77 18 0 21 -203 28 -211 7z"/>
-                <path d="M5734 287 c-2 -7 -3 -69 -2 -138 l3 -124 25 0 c23 0 25 4 28 57 2 44
-7 58 18 58 29 0 52 -20 83 -70 31 -50 65 -66 77 -36 7 18 -17 65 -45 90 l-21
-19 29 18 c36 22 46 60 27 98 -20 37 -32 41 -132 41 -60 0 -86 -4 -90 -13z
-m154 -39 c33 -33 1 -68 -62 -68 -35 0 -36 1 -36 40 l0 40 43 0 c24 0 48 -5 55
--12z"/>
-                <path d="M6794 286 c-10 -25 5 -36 46 -36 l39 0 3 -106 c2 -87 6 -109 20 -117
-12 -8 21 -7 32 2 13 11 16 35 16 117 l0 103 43 3 c34 2 42 7 42 23 0 19 -8 20
--118 23 -96 2 -118 0 -123 -12z"/>
-                <path d="M9975 60 c-8 -26 6 -43 31 -38 13 2 19 12 19 28 0 34 -40 41 -50 10z"/>
-            </g>
-        </svg>
-    </div>
-</div>
 
 <header>
     <div id="toolbar" class="w-full fixed top-0 border-b-2 bg-white/65 backdrop-blur-md z-40">
@@ -599,7 +489,8 @@ m154 -39 c33 -33 1 -68 -62 -68 -35 0 -36 1 -36 40 l0 40 43 0 c24 0 48 -5 55
                 <li class="p-3 font-bold text-black text-base border-b-2 border-white">about us</li>
                 <li class="p-3 font-bold text-black text-base border-b-2 border-white">contact us</li>
                 <li class="p-3 font-bold text-black text-base border-b-2 border-white">
-                    <div class="w-full flex justify-around flex-wrap">
+                    <div
+                            class="w-full flex justify-around flex-wrap">
                         <a href="">
                             <div class="w-full flex gap-2 px-2 py-1">
                                 <svg class="w-6" xmlns="http://www.w3.org/2000/svg" id="flag-icons-gb"
@@ -895,314 +786,85 @@ m154 -39 c33 -33 1 -68 -62 -68 -35 0 -36 1 -36 40 l0 40 43 0 c24 0 48 -5 55
             </ul>
         </nav>
     </div>
-    <div id="slider" class="relative w-full h-fit overflow-hidden flex items-center">
-        <button id="prev-btn"
-                class="z-10 absolute left-3 md:left-5 bg-ownBlue text-white px-2 py-2 sm:px-3 rounded-full hover:opacity-80 block">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                 stroke="currentColor" class="w-4 sm:w-5 h-fit">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M21 16.811c0 .864-.933 1.406-1.683.977l-7.108-4.061a1.125 1.125 0 0 1 0-1.954l7.108-4.061A1.125 1.125 0 0 1 21 8.689v8.122ZM11.25 16.811c0 .864-.933 1.406-1.683.977l-7.108-4.061a1.125 1.125 0 0 1 0-1.954l7.108-4.061a1.125 1.125 0 0 1 1.683.977v8.122Z"/>
-            </svg>
-        </button>
-        <button id="next-btn"
-                class="z-10 absolute right-3 md:right-5 bg-ownBlue text-white px-2 py-2 sm:px-3 rounded-full hover:opacity-80 block">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                 stroke="currentColor" class="w-4 sm:w-5 h-fit">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M3 8.689c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 0 1 0 1.954l-7.108 4.061A1.125 1.125 0 0 1 3 16.811V8.69ZM12.75 8.689c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 0 1 0 1.954l-7.108 4.061a1.125 1.125 0 0 1-1.683-.977V8.69Z"/>
-            </svg>
-        </button>
-
-        <div id="slider-box" class="w-full h-72 md:h-96 lg:h-[440px] relative bg-black">
-            <div class="slide w-full h-full absolute top-0 bg-[url('./images/img1.jpg')] bg-cover bg-no-repeat bg-right-bottom flex items-center">
-                <div class="w-1/2 md:w-3/5 bg-ownBlue-blur p-3 ml-14 md:ml-20 rounded-xl max-h-80">
-                    <p class="text-white text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 tracking-normal capitalize">
-                        Lorem ipsum dolor sit amet, consecrate radicalising elite.
-                    </p>
-                    <p class="text-white text-base md:text-lg xl:text-xl font-bold line-clamp-2 tracking-normal capitalize mt-2">
-                        Amet, asperiores aut doloremque et
-                        fuga fugit id ipsa modi mollitia nulla quisquam repudiandae rerum sapiente sint sit soluta
-                        tempore vitae voluptate.
-                    </p>
-                    <button class="bg-amber-500 hover:bg-amber-600 text-xs md:text-base font-medium md:font-semibold text-white rounded-md px-2 py-1 md:px-4 md:py-2 capitalize mt-3 float-right">
-                        show me
-                    </button>
-                </div>
-            </div>
-            <!------------->
-            <div class="slide w-full h-full absolute top-0 bg-[url('./images/img2.jpg')] bg-cover bg-no-repeat bg-right-bottom flex items-center">
-                <div class="w-1/2 md:w-3/5 bg-ownBlue-blur p-3 ml-14 md:ml-20 rounded-xl max-h-80">
-                    <p class="text-white text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 tracking-normal capitalize">
-                        Lorem ipsum dolor sit amet, consecrate radicalising elite.
-                    </p>
-                    <p class="text-white text-base md:text-lg xl:text-xl font-bold line-clamp-2 tracking-normal capitalize mt-2">
-                        Amet, asperiores aut doloremque et
-                        fuga fugit id ipsa modi mollitia nulla quisquam repudiandae rerum sapiente sint sit soluta
-                        tempore vitae voluptate.
-                    </p>
-                    <button class="bg-amber-500 hover:bg-amber-600 text-xs md:text-base font-medium md:font-semibold text-white rounded-md px-2 py-1 md:px-4 md:py-2 capitalize mt-3 float-right">
-                        show me
-                    </button>
-                </div>
-            </div>
-            <!------------->
-            <div class="slide w-full h-full absolute top-0 bg-[url('./images/img3.jpg')] bg-cover bg-no-repeat bg-right-bottom flex items-center">
-                <div class="w-1/2 md:w-3/5 bg-ownBlue-blur p-3 ml-14 md:ml-20 rounded-xl max-h-80">
-                    <p class="text-white text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 tracking-normal capitalize">
-                        Lorem ipsum dolor sit amet, consecrate radicalising elite.
-                    </p>
-                    <p class="text-white text-base md:text-lg xl:text-xl font-bold line-clamp-2 tracking-normal capitalize mt-2">
-                        Amet, asperiores aut doloremque et
-                        fuga fugit id ipsa modi mollitia nulla quisquam repudiandae rerum sapiente sint sit soluta
-                        tempore vitae voluptate.
-                    </p>
-                    <button class="bg-amber-500 hover:bg-amber-600 text-xs md:text-base font-medium md:font-semibold text-white rounded-md px-2 py-1 md:px-4 md:py-2 capitalize mt-3 float-right">
-                        show me
-                    </button>
-                </div>
-            </div>
-            <!------------->
-            <div class="slide w-full h-full absolute top-0 bg-[url('./images/img4.jpg')] bg-cover bg-no-repeat bg-right-bottom flex items-center">
-                <div class="w-1/2 md:w-3/5 bg-ownBlue-blur p-3 ml-14 md:ml-20 rounded-xl max-h-80">
-                    <p class="text-white text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 tracking-normal capitalize">
-                        Lorem ipsum dolor sit amet, consecrate radicalising elite.
-                    </p>
-                    <p class="text-white text-base md:text-lg xl:text-xl font-bold line-clamp-2 tracking-normal capitalize mt-2">
-                        Amet, asperiores aut doloremque et
-                        fuga fugit id ipsa modi mollitia nulla quisquam repudiandae rerum sapiente sint sit soluta
-                        tempore vitae voluptate.
-                    </p>
-                    <button class="bg-amber-500 hover:bg-amber-600 text-xs md:text-base font-medium md:font-semibold text-white rounded-md px-2 py-1 md:px-4 md:py-2 capitalize mt-3 float-right">
-                        show me
-                    </button>
-                </div>
-            </div>
-            <!------------->
-            <div class="slide w-full h-full absolute top-0 bg-[url('./images/img5.jpg')] bg-cover bg-no-repeat bg-right-bottom flex items-center">
-                <div class="w-1/2 md:w-3/5 bg-ownBlue-blur p-3 ml-14 md:ml-20 rounded-xl max-h-80">
-                    <p class="text-white text-xl md:text-2xl xl:text-3xl font-bold line-clamp-2 tracking-normal capitalize">
-                        Lorem ipsum dolor sit amet, consecrate radicalising elite.
-                    </p>
-                    <p class="text-white text-base md:text-lg xl:text-xl font-bold line-clamp-2 tracking-normal capitalize mt-2">
-                        Amet, asperiores aut doloremque et
-                        fuga fugit id ipsa modi mollitia nulla quisquam repudiandae rerum sapiente sint sit soluta
-                        tempore vitae voluptate.
-                    </p>
-                    <button class="bg-amber-500 hover:bg-amber-600 text-xs md:text-base font-medium md:font-semibold text-white rounded-md px-2 py-1 md:px-4 md:py-2 capitalize mt-3 float-right">
-                        show me
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div id="progress-box" class="z-10 w-full h-1.5 px-3 absolute bottom-0">
-            <div id="progress-bar" class="w-0 h-full bg-ownBlue rounded-full"></div>
-        </div>
-    </div>
 </header>
 
-
-<main class="w-full px-3 md:px-8 lg:px-10 xl:px-12">
-    <!-------------------------Text Bar------------------------->
-    <div class="w-full h-10 mt-24 bg-ownBlue flex items-center justify-center bg-gradient-to-r from-sky-800 via-sky-500 to-sky-800">
-        <p class="text-white capitalize tracking-wider font-semibold text-xl">
-            know more about us
-        </p>
-    </div>
-
-    <!-------------------------Text & Pics------------------------->
-    <div class="mt-10">
-        <div class="flex flex-col md:flex-row items-center gap-4 lg:gap-8">
-            <img src="./images/img2.jpg" alt="" class="md:w-1/2 rounded-lg">
-            <div class="md:w-1/2 px-1.5 py-2 h-full">
-                <p class="text-xl md:text-2xl xl:text-3xl font-bold line-clamp-3 tracking-normal capitalize">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, non.
-                </p>
-                <p class="text-base md:text-lg xl:text-xl font-bold line-clamp-4 tracking-normal capitalize mt-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque ea eius expedita
-                    explicabo, illum modi obcaecati optio, pariatur ratione temporibus vel velit! Cum deserunt eius,
-                    natus optio quam vero!
-                </p>
-            </div>
-        </div>
-        <!-------->
-        <div class="flex flex-col-reverse md:flex-row items-center mt-20 gap-4 lg:gap-8">
-            <div class="md:w-1/2 px-1.5 py-2 h-full">
-                <p class="text-xl md:text-2xl xl:text-3xl font-bold line-clamp-3 tracking-normal capitalize">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, non.
-                </p>
-                <p class="text-base md:text-lg xl:text-xl font-bold line-clamp-4 tracking-normal capitalize mt-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ea et minus officiis quis ratione saepe
-                    sapiente sed veniam voluptas.
-                </p>
-            </div>
-            <img src="./images/img1.jpg" alt="" class="md:w-1/2 rounded-lg">
-        </div>
-    </div>
-
-    <!-------------------------Text Bar------------------------->
-
-    <div class="w-full h-10 mt-40 bg-ownBlue flex items-center justify-center bg-gradient-to-r from-sky-800 via-sky-500 to-sky-800">
-        <p class="text-white capitalize tracking-wider font-semibold text-xl">
-            see some products
-        </p>
-    </div>
-
-    <!-------------------------Gallery------------------------->
-
-    <div id="gallery"
-         class="w-full mt-10 grid grid-cols-2 md:grid-cols-3 grid-rows-5 md:grid-rows-4 gap-2 lg:gap-4">
-        <div class="gallery_pic col-span-2 row-span-2 rounded-lg overflow-hidden relative bg-[url('./images/img1.jpg')] bg-cover bg-no-repeat bg-right-bottom border w-full bg-ownBlue">
-            <div class="gallery_subtitle w-full bg-black/80 h-fit absolute bottom-0 px-4 py-2">
-                <p class="w-full text-white tracking-wide line-clamp-3 lg:line-clamp-2 text-[10px] md:text-xs lg:text-sm xl:text-base overflow-hidden">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda et hic iste molestiae qui
-                    repellendus veritatis voluptatem. Accusamus aut doloremque doloribus dolorum impedit laboriosam nam
-                    nesciunt quasi quis, quisquam voluptas.
-                </p>
-            </div>
-        </div>
-        <!------------>
-        <div class="gallery_pic rounded-lg overflow-hidden relative bg-[url('./images/img2.jpg')] bg-cover bg-no-repeat bg-right-bottom border w-full h-32 sm:h-52 lg:h-56 xl:h-64 bg-ownBlue">
-            <div class="gallery_subtitle w-full bg-black/80 h-fit absolute bottom-0 px-4 py-2">
-                <p class="w-full text-white tracking-wide line-clamp-3 lg:line-clamp-2 text-[10px] md:text-xs lg:text-sm xl:text-base overflow-hidden">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias asperiores blanditiis
-                    doloremque error ex hic optio sequi similique tempora? Dicta laborum nostrum quia quibusdam rerum.
-                    Delectus impedit quas ut?
-                </p>
-            </div>
-        </div>
-        <!------------>
-        <div class="gallery_pic rounded-lg overflow-hidden relative bg-[url('./images/img3.jpg')] bg-cover bg-no-repeat bg-right-bottom border w-full h-32 sm:h-52 lg:h-56 xl:h-64 bg-ownBlue">
-            <div class="gallery_subtitle w-full bg-black/80 h-fit absolute bottom-0 px-4 py-2">
-                <p class="w-full text-white tracking-wide line-clamp-3 lg:line-clamp-2 text-[10px] md:text-xs lg:text-sm xl:text-base overflow-hidden">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias asperiores blanditiis
-                    doloremque error ex hic optio sequi similique tempora? Dicta laborum nostrum quia quibusdam rerum.
-                    Delectus impedit quas ut?
-                </p>
-            </div>
-        </div>
-        <!------------>
-        <div class="gallery_pic hidden md:block rounded-lg overflow-hidden relative bg-[url('./images/img4.jpg')] bg-cover bg-no-repeat bg-right-bottom row-span-2 border w-full bg-ownBlue">
-            <div class="gallery_subtitle w-full bg-black/80 h-fit absolute bottom-0 px-4 py-2">
-                <p class="w-full text-white tracking-wide line-clamp-3 lg:line-clamp-2 text-[10px] md:text-xs lg:text-sm xl:text-base overflow-hidden">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias asperiores blanditiis
-                    doloremque error ex hic optio sequi similique tempora? Dicta laborum nostrum quia quibusdam rerum.
-                    Delectus impedit quas ut?
-                </p>
-            </div>
-        </div>
-        <!------------>
-        <div class="gallery_pic row-span-2 md:row-span-1 col-span-2 rounded-lg overflow-hidden relative bg-[url('./images/img2.jpg')] bg-cover bg-no-repeat bg-right-bottom border w-full bg-ownBlue">
-            <div class="gallery_subtitle w-full bg-black/80 h-fit absolute bottom-0 px-4 py-2">
-                <p class="w-full text-white tracking-wide line-clamp-3 lg:line-clamp-2 text-[10px] md:text-xs lg:text-sm xl:text-base overflow-hidden">
-                    Lorem ipsum dolor sit amet elit. Dicta laborum nostrum quia quibusdam rerum.
-                    Delectus impedit quas ut?
-                </p>
-            </div>
-        </div>
-        <!------------>
-        <div class="gallery_pic rounded-lg overflow-hidden relative bg-[url('./images/img1.jpg')] bg-cover bg-no-repeat bg-right-bottom border w-full h-32 sm:h-52 lg:h-56 xl:h-64 bg-ownBlue">
-            <div class="gallery_subtitle w-full bg-black/80 h-fit absolute bottom-0 px-4 py-2">
-                <p class="w-full text-white tracking-wide line-clamp-3 lg:line-clamp-2 text-[10px] md:text-xs lg:text-sm xl:text-base overflow-hidden">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias asperiores blanditiis
-                    doloremque error ex hic optio sequi similique tempora? Dicta laborum nostrum quia quibusdam rerum.
-                    Delectus impedit quas ut?
-                </p>
-            </div>
-        </div>
-        <!------------>
-        <div class="gallery_pic rounded-lg overflow-hidden relative bg-[url('./images/img5.jpg')] bg-cover bg-no-repeat bg-right-bottom border w-full h-32 sm:h-52 lg:h-56 xl:h-64 bg-ownBlue">
-            <div class="gallery_subtitle w-full bg-black/80 h-fit absolute bottom-0 px-4 py-2">
-                <p class="w-full text-white tracking-wide line-clamp-3 lg:line-clamp-2 text-[10px] md:text-xs lg:text-sm xl:text-base overflow-hidden">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias asperiores blanditiis
-                    doloremque error ex hic optio sequi similique tempora? Dicta laborum nostrum quia quibusdam rerum.
-                    Delectus impedit quas ut?
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-------------------------Video------------------------->
-
-    <div class="relative w-full h-fit overflow-hidden flex items-start mt-14 rounded-xl border-8 border-white shadow-2xl shadow-outline">
-        <video class="w-full h-fit" src="./videos/video1.mp4" autoplay loop muted></video>
-        <div class="absolute insert-3 w-full h-full bg-black/20 flex justify-start items-end">
-            <p class="text-white text-xl md:text-2xl xl:text-3xl font-semibold line-clamp-1 tracking-wide capitalize w-full px-5 md:px-8 mb-4 lg:px-10 xl:px-14 bg-black/30">
-                Hello
-            </p>
-        </div>
-    </div>
-
-    <!-------------------------Text Bar------------------------->
-
-    <div class="w-full h-10 mt-40 bg-ownBlue flex items-center justify-center bg-gradient-to-r from-sky-800 via-sky-500 to-sky-800">
-        <p class="text-white capitalize tracking-wider font-semibold text-xl">
-            read some descriptions
-        </p>
-    </div>
-
+<main class="w-full px-3 md:px-8 lg:px-10 xl:px-12 mt-5">
     <!-------------------------Cards------------------------->
-
-    <div class="mt-10 w-full grid grid-cols-2 md:grid-cols-3 grid-rows-1 gap-2 sm:gap-4 lg:gap-8">
+    <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-1 gap-2 sm:gap-4 lg:gap-8">
         <div class="flex flex-col text-white capitalize w-full bg-gradient-to-t from-sky-800 via-sky-600 to-purple-700 rounded-lg p-2 sm:p-2.5 drop-shadow-xl">
             <div class="bg-white rounded-lg p-1 sm:p-1.5 drop-shadow-lg">
                 <img src="./images/img1.jpg" class="w-full h-fit">
             </div>
-            <h3 class="text-base md:text-lg xl:text-xl font-semibold line-clamp-2 tracking-wider mt-3">
+            <h3 class="text-base md:text-lg xl:text-xl font-semibold tracking-wider mt-3">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, id.
             </h3>
-            <p class="text-sm md:text-base xl:text-lg line-clamp-6 tracking-wider mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at aut beatae debitis eius fugit id ipsum
+            <p class="text-sm md:text-base xl:text-lg tracking-wider mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at aut beatae debitis eius fugit id
+                ipsum
                 laudantium, molestias nemo nobis officia porro quibusdam quidem reprehenderit sequi tenetur vitae,
                 voluptatum.
             </p>
-            <div class="grow w-full h-fit flex justify-end items-end mt-5 pb-1 px-2">
-                <button class="px-1.5 py-1 capitalize border-2 border-white hover:font-bold hover:text-purple-700 hover:bg-white hover:border-purple-700 hover:border-4 active:ring-offset-4 active:ring-offset-sky-800 active:ring-2 active:ring-white rounded-md">
-                    read more
-                </button>
-            </div>
         </div>
         <div class="flex flex-col text-white capitalize w-full bg-gradient-to-t from-sky-800 via-sky-600 to-purple-700 rounded-lg p-2 sm:p-2.5 drop-shadow-xl">
             <div class="bg-white rounded-lg p-1 sm:p-1.5 drop-shadow-lg">
                 <img src="./images/img1.jpg" class="w-full h-fit">
             </div>
-            <h3 class="text-base md:text-lg xl:text-xl font-semibold line-clamp-2 tracking-wider mt-3">
+            <h3 class="text-base md:text-lg xl:text-xl font-semibold tracking-wider mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, id.
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, id.
             </h3>
-            <p class="text-sm md:text-base xl:text-lg line-clamp-6 tracking-wider mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at aut beatae debitis eius fugit id ipsum
+            <p class="text-sm md:text-base xl:text-lg tracking-wider mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at aut beatae debitis eius fugit id
+                ipsum
                 laudantium, molestias nemo nobis officia porro quibusdam quidem reprehenderit sequi tenetur vitae,
                 voluptatum.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at aut beatae debitis eius fugit id ipsum
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at aut beatae debitis eius fugit id
+                ipsum
+                laudantium, molestias nemo nobis officia porro quibusdam quidem reprehenderit sequi tenetur vitae,
+                voluptatum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at aut beatae debitis eius fugit id
+                ipsum
                 laudantium, molestias nemo nobis officia porro quibusdam quidem reprehenderit sequi tenetur vitae,
                 voluptatum.
             </p>
-            <div class="grow w-full h-fit flex justify-end items-end mt-5 pb-1 px-2">
-                <button class="px-1.5 py-1 capitalize border-2 border-white hover:font-bold hover:text-purple-700 hover:bg-white hover:border-purple-700 hover:border-4 active:ring-offset-4 active:ring-offset-sky-800 active:ring-2 active:ring-white rounded-md">
-                    read more
-                </button>
-            </div>
         </div>
-        <!------------->
-        <div class="hidden md:flex md:flex-col text-white capitalize w-full bg-gradient-to-t from-sky-800 via-sky-600 to-purple-700 rounded-lg p-2 sm:p-2.5 drop-shadow-xl">
+        <div class="flex flex-col text-white capitalize w-full bg-gradient-to-t from-sky-800 via-sky-600 to-purple-700 rounded-lg p-2 sm:p-2.5 drop-shadow-xl">
             <div class="bg-white rounded-lg p-1 sm:p-1.5 drop-shadow-lg">
                 <img src="./images/img1.jpg" class="w-full h-fit">
             </div>
-            <h3 class="text-base md:text-lg xl:text-xl font-semibold line-clamp-2 tracking-wider mt-3">
+            <h3 class="text-base md:text-lg xl:text-xl font-semibold tracking-wider mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, id.
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, id.
             </h3>
-            <p class="text-sm md:text-base xl:text-lg line-clamp-6 tracking-wider mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at aut beatae debitis eius fugit id ipsum
-                laudantium.
+            <p class="text-sm md:text-base xl:text-lg tracking-wider mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at aut beatae debitis eius fugit id
+                ipsum
+                laudantium, molestias nemo nobis officia porro quibusdam quidem reprehenderit sequi tenetur vitae,
+                voluptatum. consectetur adipisicing elit. Ad at aut beatae debitis eius fugit id
+                ipsum
+                laudantium, molestias nemo nobis officia porro quibusdam quidem reprehenderit sequi tenetur vitae,
+                voluptatum.
             </p>
-            <div class="grow w-full flex justify-end items-end mt-5 pb-1 px-2">
-                <button class="px-1.5 py-1 capitalize border-2 border-white hover:font-bold hover:text-purple-700 hover:bg-white hover:border-purple-700 hover:border-4 active:ring-offset-4 active:ring-offset-sky-800 active:ring-2 active:ring-white rounded-md">
-                    read more
-                </button>
+        </div>
+        <div class="flex flex-col text-white capitalize w-full bg-gradient-to-t from-sky-800 via-sky-600 to-purple-700 rounded-lg p-2 sm:p-2.5 drop-shadow-xl">
+            <div class="bg-white rounded-lg p-1 sm:p-1.5 drop-shadow-lg">
+                <img src="./images/img1.jpg" class="w-full h-fit">
             </div>
+            <h3 class="text-base md:text-lg xl:text-xl font-semibold tracking-wider mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, id.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, id.
+            </h3>
+            <p class="text-sm md:text-base xl:text-lg tracking-wider mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at aut beatae debitis eius fugit id
+                ipsum
+                laudantium, molestias nemo nobis officia porro quibusdam quidem reprehenderit sequi tenetur vitae,
+                voluptatum. consectetur adipisicing elit. Ad at aut beatae debitis eius fugit id
+                ipsum
+                laudantium, molestias nemo nobis officia porro quibusdam quidem reprehenderit sequi tenetur vitae,
+                voluptatum.
+            </p>
         </div>
     </div>
-
 </main>
 
 <footer class="w-full mt-32 bg-gradient-to-br from-sky-800 via-sky-600 to-purple-700">
@@ -1648,11 +1310,8 @@ c28 -14 81 -94 81 -120 0 -8 7 -27 15 -44 8 -17 22 -45 30 -62 8 -17 15 -35
 </body>
 
 <!--Scripts-->
-<script src="./js/intro.js"></script>
-<script src="js/setBodyPadding.js"></script>
-<script src="./js/slider.js"></script>
 <script src="./js/toggle.js"></script>
 <script src="./js/langPopup.js"></script>
-<script src="./js/galleryAnimation.js"></script>
+<script src="js/setBodyPadding.js"></script>
 <script src="./js/yearForCopyright.js"></script>
 </html>

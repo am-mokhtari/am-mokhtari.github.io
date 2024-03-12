@@ -1,0 +1,21 @@
+@layer utilities {
+    .bg-ownBlue-blur {
+        background-color: #0E4C6BA0;
+    }
+
+    #gallery {
+        opacity: 0;
+    }
+
+    .gallery_subtitle {
+        display: none;
+    }
+
+    #timetable-list > *:not(:first-child) {
+        padding-top: 5px;
+    }
+
+    #timetable-list > * {
+        margin-bottom: 5px;
+    }
+}
