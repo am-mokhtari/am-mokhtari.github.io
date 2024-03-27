@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .rtl {
+        direction: rtl;
+    }
+
+    .ltr {
+        direction: ltr;
+    }
+
+    .kamran {
+        font-family: kamran, serif;
+    }
+
+    .zar {
+        font-family: zar, serif;
+    }
+
+    .aunchanted {
+        font-family: aunchanted, serif;
+    }
+}

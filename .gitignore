@@ -1,0 +1,5 @@
+new-site/node_modules/
+new-site/output.css
+new-site/package-lock.json
+new-site/package.json
+new-site/tailwind.config.js
