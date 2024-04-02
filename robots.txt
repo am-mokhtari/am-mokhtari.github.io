@@ -1,0 +1,8 @@
+sitemap: https://am-mokhtari.github.io
+User-agent:*
+Disallow:/archived
+Disallow:/images
+Disallow:/package-lock.json
+Disallow:/package.json
+Disallow:/node_modules
+Disallow:/.gitignore
