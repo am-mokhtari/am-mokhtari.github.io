@@ -14,11 +14,6 @@
     }
 
     @font-face {
-        font-family: contf;
-        src: url("./fonts/CONTF___.ttf");
-    }
-
-    @font-face {
         font-family: charbold;
         src: url("./fonts/Charbold.ttf");
     }
@@ -37,10 +32,6 @@
 
     .zar {
         font-family: zar, serif;
-    }
-
-    .contf {
-        font-family: contf, serif;
     }
 
     .charbold {
